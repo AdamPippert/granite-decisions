@@ -1,0 +1,41 @@
+{
+  "adapter": "/var/home/adam/Development/granite-decisions/experiments/overnight-20260917/run/checkpoints/lr3e-05-seed29-step282",
+  "validation": {
+    "families": {
+      "banking77": {
+        "n": 154,
+        "nll": 2.1202011814764155,
+        "normalized_nll": 0.48809764148497164,
+        "accuracy": 0.5844155844155844,
+        "brier": 0.6144888419917882,
+        "ece_10_bins": 0.13850682320994762,
+        "coverage_at_0_8": 0.42857142857142855,
+        "accuracy_at_0_8": 0.7878787878787878
+      },
+      "boolq": {
+        "n": 256,
+        "nll": 0.3206151051738542,
+        "normalized_nll": 0.46254982226841296,
+        "accuracy": 0.87109375,
+        "brier": 0.1789443533990443,
+        "ece_10_bins": 0.03773516242483822,
+        "coverage_at_0_8": 0.796875,
+        "accuracy_at_0_8": 0.9362745098039216
+      },
+      "synthetic_score": {
+        "n": 256,
+        "nll": 0.19194251539009174,
+        "normalized_nll": 0.10784769477240397,
+        "accuracy": 0.9375,
+        "brier": 0.09602974635768995,
+        "ece_10_bins": 0.0321970883936196,
+        "coverage_at_0_8": 0.94140625,
+        "accuracy_at_0_8": 0.9626556016597511,
+        "expected_score_mae": 0.10211767243129619
+      }
+    },
+    "objective": 0.3528317195085962
+  },
+  "trial": "lr3e-05-seed29",
+  "step": 282
+}

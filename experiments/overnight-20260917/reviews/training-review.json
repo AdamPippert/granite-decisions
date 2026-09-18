@@ -1,0 +1,200 @@
+{
+  "metrics": {
+    "correctness": {
+      "applicable": true,
+      "score": 6.7,
+      "confidence": 0.53,
+      "summary": "Correctness and requirement fit is acceptable but improvable based on the supplied change context.",
+      "issues": [
+        {
+          "severity": "low",
+          "description": "An important edge case or invalid state appears insufficiently handled.",
+          "suggestion": "Address the concrete requirement, edge-case, invariant, or regression risk before polishing structure."
+        }
+      ]
+    },
+    "cognitiveComplexity": {
+      "applicable": true,
+      "score": 7.2,
+      "confidence": 0.66,
+      "summary": "Cognitive complexity is strong based on the supplied change context.",
+      "issues": [
+        {
+          "severity": "low",
+          "description": "State transitions or side effects are difficult to reason about.",
+          "suggestion": "Simplify the hardest control or data flow while preserving a cohesive implementation."
+        }
+      ]
+    },
+    "readability": {
+      "applicable": true,
+      "score": 7.8,
+      "confidence": 0.69,
+      "summary": "Readability and intent is strong based on the supplied change context.",
+      "issues": [
+        {
+          "severity": "low",
+          "description": "The control or data flow is not immediately understandable.",
+          "suggestion": "Make intent explicit through clearer naming, flow, or responsibility boundaries."
+        }
+      ]
+    },
+    "modularity": {
+      "applicable": true,
+      "score": 6.2,
+      "confidence": 0.59,
+      "summary": "Modularity and cohesion is acceptable but improvable based on the supplied change context.",
+      "issues": [
+        {
+          "severity": "low",
+          "description": "One module owns too many independently changing concerns.",
+          "suggestion": "Regroup responsibilities around cohesive domain behavior without creating gratuitous layers."
+        }
+      ]
+    },
+    "coupling": {
+      "applicable": true,
+      "score": 7,
+      "confidence": 0.7,
+      "summary": "Coupling and dependency quality is acceptable but improvable based on the supplied change context.",
+      "issues": [
+        {
+          "severity": "low",
+          "description": "A global or implicit dependency makes behavior harder to predict.",
+          "suggestion": "Remove or invert the dependency that most strongly leaks details or makes change unsafe."
+        }
+      ]
+    },
+    "changeability": {
+      "applicable": false
+    },
+    "abstractionQuality": {
+      "applicable": true,
+      "score": 7,
+      "confidence": 0.69,
+      "summary": "Abstraction and API design is acceptable but improvable based on the supplied change context."
+    },
+    "projectStructure": {
+      "applicable": false
+    },
+    "duplication": {
+      "applicable": true,
+      "score": 7.1,
+      "confidence": 0.64,
+      "summary": "Duplication and reuse is strong based on the supplied change context."
+    },
+    "maintainability": {
+      "applicable": true,
+      "score": 6.9,
+      "confidence": 0.7,
+      "summary": "Maintainability is acceptable but improvable based on the supplied change context.",
+      "issues": [
+        {
+          "severity": "low",
+          "description": "Failures would be difficult to isolate and diagnose.",
+          "suggestion": "Reduce the highest recurring cost of understanding, changing, debugging, or testing this code."
+        }
+      ]
+    },
+    "testQuality": {
+      "applicable": true,
+      "score": 6.7,
+      "confidence": 0.66,
+      "summary": "Testability and test quality is acceptable but improvable based on the supplied change context."
+    },
+    "reliability": {
+      "applicable": true,
+      "score": 6.8,
+      "confidence": 0.69,
+      "summary": "Reliability and error handling is acceptable but improvable based on the supplied change context.",
+      "issues": [
+        {
+          "severity": "low",
+          "description": "Timeout or retry behavior is missing, unsafe, or disproportionate.",
+          "suggestion": "Handle the most credible failure path deliberately, including cleanup and propagation where relevant."
+        }
+      ]
+    },
+    "security": {
+      "applicable": true,
+      "score": 7.2,
+      "confidence": 0.54,
+      "summary": "Security is strong based on the supplied change context."
+    },
+    "consistency": {
+      "applicable": false
+    },
+    "documentation": {
+      "applicable": true,
+      "score": 7.8,
+      "confidence": 0.69,
+      "summary": "Documentation and explainability is strong based on the supplied change context.",
+      "issues": [
+        {
+          "severity": "low",
+          "description": "A non-obvious decision or constraint lacks an explanation of why.",
+          "suggestion": "Document the non-obvious contract, constraint, configuration, or rationale at the narrowest useful location."
+        }
+      ]
+    },
+    "performance": {
+      "applicable": true,
+      "score": 6.7,
+      "confidence": 0.61,
+      "summary": "Performance and resource efficiency is acceptable but improvable based on the supplied change context.",
+      "issues": [
+        {
+          "severity": "low",
+          "description": "Meaningful computation or I/O is repeated unnecessarily.",
+          "suggestion": "Optimize only the evidenced hot path or waste, keeping the design proportionate."
+        }
+      ]
+    },
+    "scalability": {
+      "applicable": false
+    },
+    "compatibility": {
+      "applicable": false
+    },
+    "observability": {
+      "applicable": true,
+      "score": 7.6,
+      "confidence": 0.66,
+      "summary": "Observability and operability is strong based on the supplied change context.",
+      "issues": [
+        {
+          "severity": "low",
+          "description": "A relevant service boundary lacks a useful health or outcome signal.",
+          "suggestion": "Expose the smallest useful diagnostic signal for the credible production failure mode."
+        }
+      ]
+    }
+  },
+  "priorities": [
+    {
+      "metric": "modularity",
+      "severity": "low",
+      "reason": "One module owns too many independently changing concerns."
+    },
+    {
+      "metric": "correctness",
+      "severity": "low",
+      "reason": "An important edge case or invalid state appears insufficiently handled."
+    },
+    {
+      "metric": "testQuality",
+      "severity": "low",
+      "reason": "Testability and test quality is acceptable but improvable based on the supplied change context."
+    },
+    {
+      "metric": "reliability",
+      "severity": "low",
+      "reason": "Timeout or retry behavior is missing, unsafe, or disproportionate."
+    },
+    {
+      "metric": "security",
+      "severity": "low",
+      "reason": "Security is strong based on the supplied change context."
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "format": 1,
+  "sources": [
+    {
+      "file": "sources/banking-LICENSE",
+      "url": "https://raw.githubusercontent.com/PolyAI-LDN/task-specific-datasets/57ec275d8078af65b7731c2a98be812d844a6d6b/LICENSE",
+      "sha256": "7e7170e3cebf88a9f60c7b8421418323c09304da1af4d5e90f4da1dc1c8a2661",
+      "license": "CC-BY-4.0",
+      "citation": "Casanueva et al. (2020), Efficient Intent Detection with Dual Sentence Encoders, https://arxiv.org/abs/2003.04807"
+    },
+    {
+      "file": "sources/banking-README.md",
+      "url": "https://raw.githubusercontent.com/PolyAI-LDN/task-specific-datasets/57ec275d8078af65b7731c2a98be812d844a6d6b/README.md",
+      "sha256": "7b9ce9069931cc2de89dce8c7ffb53d07806cf413601ccf133b9af5227b3a373",
+      "license": "CC-BY-4.0",
+      "citation": "Casanueva et al. (2020), Efficient Intent Detection with Dual Sentence Encoders, https://arxiv.org/abs/2003.04807"
+    },
+    {
+      "file": "sources/banking-train.csv",
+      "url": "https://raw.githubusercontent.com/PolyAI-LDN/task-specific-datasets/57ec275d8078af65b7731c2a98be812d844a6d6b/banking_data/train.csv",
+      "sha256": "b06e26ac675513959a63135f11b94ea7786ed02da65db93a5650d8838cbc664b",
+      "license": "CC-BY-4.0",
+      "citation": "Casanueva et al. (2020), Efficient Intent Detection with Dual Sentence Encoders, https://arxiv.org/abs/2003.04807"
+    },
+    {
+      "file": "sources/banking-test.csv",
+      "url": "https://raw.githubusercontent.com/PolyAI-LDN/task-specific-datasets/57ec275d8078af65b7731c2a98be812d844a6d6b/banking_data/test.csv",
+      "sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d",
+      "license": "CC-BY-4.0",
+      "citation": "Casanueva et al. (2020), Efficient Intent Detection with Dual Sentence Encoders, https://arxiv.org/abs/2003.04807"
+    },
+    {
+      "file": "sources/boolq-README.md",
+      "url": "https://raw.githubusercontent.com/google-research-datasets/boolean-questions/90af34107399cc7a446b373dc4ee35b8001da7c2/README.md",
+      "sha256": "0afe70d7cdbb644637592212f0cb15339389910bf00f35764ec3c545257aa663",
+      "license": "CC-BY-SA-3.0",
+      "citation": "Clark et al. (2019), BoolQ: Exploring the Surprising Difficulty of Natural Yes/No Questions, https://arxiv.org/abs/1905.10044"
+    },
+    {
+      "file": "sources/boolq-train.parquet",
+      "url": "https://huggingface.co/datasets/google/boolq/resolve/35b264d03638db9f4ce671b711558bf7ff0f80d5/data/train-00000-of-00001.parquet",
+      "sha256": "4f028e992c0bd4df30b9f056f4946b64f5c23028034ff0ed5ea467d8538cc623",
+      "license": "CC-BY-SA-3.0",
+      "citation": "Clark et al. (2019), BoolQ: Exploring the Surprising Difficulty of Natural Yes/No Questions, https://arxiv.org/abs/1905.10044"
+    },
+    {
+      "file": "sources/boolq-dev.parquet",
+      "url": "https://huggingface.co/datasets/google/boolq/resolve/35b264d03638db9f4ce671b711558bf7ff0f80d5/data/validation-00000-of-00001.parquet",
+      "sha256": "52355d11524b4b874a9b9dcc278feb10f672d52c4f4eff9872e695ede59820f8",
+      "license": "CC-BY-SA-3.0",
+      "citation": "Clark et al. (2019), BoolQ: Exploring the Surprising Difficulty of Natural Yes/No Questions, https://arxiv.org/abs/1905.10044"
+    }
+  ],
+  "upstream_commits": {
+    "PolyAI-LDN/task-specific-datasets": "57ec275d8078af65b7731c2a98be812d844a6d6b",
+    "google-research-datasets/boolean-questions": "90af34107399cc7a446b373dc4ee35b8001da7c2"
+  },
+  "counts": {
+    "train": {
+      "banking77": 3068,
+      "boolq": 2048,
+      "synthetic_score": 2048
+    },
+    "validation": {
+      "banking77": 154,
+      "boolq": 256,
+      "synthetic_score": 256
+    },
+    "calibration": {
+      "banking77": 154,
+      "boolq": 256,
+      "synthetic_score": 256
+    },
+    "test": {
+      "banking77": 154,
+      "boolq": 256,
+      "synthetic_score": 256
+    }
+  },
+  "split_policy": "BANKING77 stratified holdouts from official train; official test reserved. BoolQ normalized-passage-hash train splits (HF mirror omits titles); official dev reserved as test; cross-split passages removed. Synthetic rubric groups disjoint.",
+  "files": {
+    "train.jsonl": "c593c80cd9957e2d59f53dd3428cf890697d884509aa419b5c4f8ea118d21136",
+    "validation.jsonl": "af1f19fb502c63555e5441fd0ab2f33739180a4ff32239dc08f4a7720025a7b8",
+    "calibration.jsonl": "b2da88639bb4c8dae77ec4b6168b5b6a46eb94eaa98cfcabd26b8985806d10b1",
+    "test.jsonl": "1f44cfda3c1bae85c7ea6885ac2503810caa0ac8487dcd57a0f62589d448a11a"
+  },
+  "licenses": {
+    "banking77": "CC-BY-4.0",
+    "boolq": "CC-BY-SA-3.0",
+    "synthetic_score": "MIT"
+  },
+  "pretraining_contamination": "Unknown; upstream model may have seen these public benchmarks."
+}

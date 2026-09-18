@@ -1,0 +1,26 @@
+{
+  "selection": "20 per family ordered by sha256(jev-fixed-v1-ID), fixed before predictions",
+  "purpose": "held-out evaluator only; never training labels or checkpoint selection",
+  "test_sha256": "1f44cfda3c1bae85c7ea6885ac2503810caa0ac8487dcd57a0f62589d448a11a",
+  "n": 60,
+  "families": {
+    "banking77": {
+      "requested": 20,
+      "valid_n": 18,
+      "rejected": 2,
+      "accuracy_on_valid_responses": 0.8888888888888888
+    },
+    "boolq": {
+      "requested": 20,
+      "valid_n": 20,
+      "rejected": 0,
+      "accuracy_on_valid_responses": 0.8
+    },
+    "synthetic_score": {
+      "requested": 20,
+      "valid_n": 20,
+      "rejected": 0,
+      "accuracy_on_valid_responses": 1.0
+    }
+  }
+}

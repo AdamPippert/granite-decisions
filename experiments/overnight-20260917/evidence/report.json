@@ -1,0 +1,209 @@
+{
+  "status": "complete",
+  "selection": {
+    "adapter": "/var/home/adam/Development/granite-decisions/experiments/overnight-20260917/run/checkpoints/lr3e-05-seed29-step282",
+    "validation": {
+      "families": {
+        "banking77": {
+          "n": 154,
+          "nll": 2.1202011814764155,
+          "normalized_nll": 0.48809764148497164,
+          "accuracy": 0.5844155844155844,
+          "brier": 0.6144888419917882,
+          "ece_10_bins": 0.13850682320994762,
+          "coverage_at_0_8": 0.42857142857142855,
+          "accuracy_at_0_8": 0.7878787878787878
+        },
+        "boolq": {
+          "n": 256,
+          "nll": 0.3206151051738542,
+          "normalized_nll": 0.46254982226841296,
+          "accuracy": 0.87109375,
+          "brier": 0.1789443533990443,
+          "ece_10_bins": 0.03773516242483822,
+          "coverage_at_0_8": 0.796875,
+          "accuracy_at_0_8": 0.9362745098039216
+        },
+        "synthetic_score": {
+          "n": 256,
+          "nll": 0.19194251539009174,
+          "normalized_nll": 0.10784769477240397,
+          "accuracy": 0.9375,
+          "brier": 0.09602974635768995,
+          "ece_10_bins": 0.0321970883936196,
+          "coverage_at_0_8": 0.94140625,
+          "accuracy_at_0_8": 0.9626556016597511,
+          "expected_score_mae": 0.10211767243129619
+        }
+      },
+      "objective": 0.3528317195085962
+    },
+    "trial": "lr3e-05-seed29",
+    "step": 282
+  },
+  "evaluation": {
+    "baseline": {
+      "uncalibrated": {
+        "families": {
+          "banking77": {
+            "n": 154,
+            "nll": 9.884958930337861,
+            "normalized_nll": 2.2756449634246128,
+            "accuracy": 0.42857142857142855,
+            "brier": 0.9972595196277813,
+            "ece_10_bins": 0.4717585878570024,
+            "coverage_at_0_8": 0.7922077922077922,
+            "accuracy_at_0_8": 0.5409836065573771
+          },
+          "boolq": {
+            "n": 256,
+            "nll": 2.903222904652971,
+            "normalized_nll": 4.188465287138094,
+            "accuracy": 0.8203125,
+            "brier": 0.34929154867834356,
+            "ece_10_bins": 0.1757534898979391,
+            "coverage_at_0_8": 0.984375,
+            "accuracy_at_0_8": 0.8253968253968254
+          },
+          "synthetic_score": {
+            "n": 256,
+            "nll": 3.785517314034717,
+            "normalized_nll": 2.3891114236956117,
+            "accuracy": 0.6328125,
+            "brier": 0.673402219824655,
+            "ece_10_bins": 0.3265185680330229,
+            "coverage_at_0_8": 0.92578125,
+            "accuracy_at_0_8": 0.6540084388185654,
+            "expected_score_mae": 0.4989716266170903
+          }
+        },
+        "objective": 2.951073891419439
+      },
+      "calibrated": {
+        "families": {
+          "banking77": {
+            "n": 154,
+            "nll": 2.8534867600636007,
+            "normalized_nll": 0.6569094337669248,
+            "accuracy": 0.42857142857142855,
+            "brier": 0.7166234815789573,
+            "ece_10_bins": 0.0780083963495966,
+            "coverage_at_0_8": 0.08441558441558442,
+            "accuracy_at_0_8": 1.0
+          },
+          "boolq": {
+            "n": 256,
+            "nll": 0.4028284239120963,
+            "normalized_nll": 0.5811585695070984,
+            "accuracy": 0.8203125,
+            "brier": 0.2552290354893535,
+            "ece_10_bins": 0.04260259764652865,
+            "coverage_at_0_8": 0.7578125,
+            "accuracy_at_0_8": 0.8969072164948454
+          },
+          "synthetic_score": {
+            "n": 256,
+            "nll": 1.0612123837810425,
+            "normalized_nll": 0.6741909283457022,
+            "accuracy": 0.6328125,
+            "brier": 0.5372556612246449,
+            "ece_10_bins": 0.20216931292363602,
+            "coverage_at_0_8": 0.0,
+            "accuracy_at_0_8": null,
+            "expected_score_mae": 0.9418654902782726
+          }
+        },
+        "objective": 0.6374196438732418
+      },
+      "temperatures": {
+        "banking77": 6.096016316959517,
+        "boolq": 13.300976787289521,
+        "synthetic_score": 18.416319193417266
+      }
+    },
+    "selected": {
+      "uncalibrated": {
+        "families": {
+          "banking77": {
+            "n": 154,
+            "nll": 1.871064225290788,
+            "normalized_nll": 0.4307431027820594,
+            "accuracy": 0.6493506493506493,
+            "brier": 0.5068587684378394,
+            "ece_10_bins": 0.09643810615920555,
+            "coverage_at_0_8": 0.42857142857142855,
+            "accuracy_at_0_8": 0.8787878787878788
+          },
+          "boolq": {
+            "n": 256,
+            "nll": 0.33841450233986603,
+            "normalized_nll": 0.48822892429063125,
+            "accuracy": 0.84765625,
+            "brier": 0.20755873842612554,
+            "ece_10_bins": 0.04148671208070587,
+            "coverage_at_0_8": 0.76171875,
+            "accuracy_at_0_8": 0.9333333333333333
+          },
+          "synthetic_score": {
+            "n": 256,
+            "nll": 0.15098334788760231,
+            "normalized_nll": 0.08535423185988497,
+            "accuracy": 0.953125,
+            "brier": 0.07220107594772496,
+            "ece_10_bins": 0.03016270864881382,
+            "coverage_at_0_8": 0.953125,
+            "accuracy_at_0_8": 0.9754098360655737,
+            "expected_score_mae": 0.07242289660621429
+          }
+        },
+        "objective": 0.3347754196441919
+      },
+      "calibrated": {
+        "families": {
+          "banking77": {
+            "n": 154,
+            "nll": 1.8765544259769213,
+            "normalized_nll": 0.43200701774899397,
+            "accuracy": 0.6493506493506493,
+            "brier": 0.5054175447623706,
+            "ece_10_bins": 0.091050715321198,
+            "coverage_at_0_8": 0.43506493506493504,
+            "accuracy_at_0_8": 0.8805970149253731
+          },
+          "boolq": {
+            "n": 256,
+            "nll": 0.3323983605195031,
+            "normalized_nll": 0.4795494663211089,
+            "accuracy": 0.84765625,
+            "brier": 0.20597335267629416,
+            "ece_10_bins": 0.02001874684269127,
+            "coverage_at_0_8": 0.70703125,
+            "accuracy_at_0_8": 0.9447513812154696
+          },
+          "synthetic_score": {
+            "n": 256,
+            "nll": 0.14907742372105148,
+            "normalized_nll": 0.08641485679548924,
+            "accuracy": 0.953125,
+            "brier": 0.06998397088135455,
+            "ece_10_bins": 0.0273871246995676,
+            "coverage_at_0_8": 0.91796875,
+            "accuracy_at_0_8": 0.9829787234042553,
+            "expected_score_mae": 0.1141122745723816
+          }
+        },
+        "objective": 0.33265711362186406
+      },
+      "temperatures": {
+        "banking77": 0.9701729583810415,
+        "boolq": 1.2349211045554038,
+        "synthetic_score": 1.7137699620090479
+      }
+    }
+  },
+  "no_automatic_weight_publication": true,
+  "calibration_scope": "Experimental family-level temperatures; not a guarantee for novel question schemas.",
+  "limitations": "Limited public benchmark subsets; unknown base-model pretraining contamination; synthetic Score data not real-world validation.",
+  "completed_at": "2026-09-18T11:54:01.298697+00:00",
+  "peak_gpu_bytes": 9611375104
+}
