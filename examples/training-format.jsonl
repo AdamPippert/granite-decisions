@@ -1,0 +1,4 @@
+{"id":"example-001","state":{"request":"Find the documented context limit for this model."},"labels":{"route":"retrieve","sufficient_context":true,"complexity":0}}
+{"id":"example-002","state":{"request":"Fix the failing retry tests in this Python service."},"labels":{"route":"code","sufficient_context":true,"complexity":1}}
+{"id":"example-003","state":{"request":"Review this proposed distributed decision architecture for consistency and failure modes."},"labels":{"route":"review","sufficient_context":true,"complexity":2}}
+{"id":"example-004","state":{"request":"Do the thing."},"labels":{"route":"unknown","sufficient_context":false,"complexity":0}}

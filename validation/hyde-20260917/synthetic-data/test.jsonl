@@ -1,0 +1,54 @@
+{"id": "test-000", "state": {"request": "Create a patch that corrects the failing tests in a single function written in Python."}, "labels": {"route": "code", "python": true, "scope": 0}}
+{"id": "test-001", "state": {"request": "Create a patch that corrects the failing tests in a single function written in JavaScript."}, "labels": {"route": "code", "python": false, "scope": 0}}
+{"id": "test-002", "state": {"request": "Create a patch that corrects the failing tests in one complete service written in Python."}, "labels": {"route": "code", "python": true, "scope": 1}}
+{"id": "test-003", "state": {"request": "Create a patch that corrects the failing tests in one complete service written in JavaScript."}, "labels": {"route": "code", "python": false, "scope": 1}}
+{"id": "test-004", "state": {"request": "Create a patch that corrects the failing tests in several services written in Python."}, "labels": {"route": "code", "python": true, "scope": 2}}
+{"id": "test-005", "state": {"request": "Create a patch that corrects the failing tests in several services written in JavaScript."}, "labels": {"route": "code", "python": false, "scope": 2}}
+{"id": "test-006", "state": {"request": "Develop the missing functionality for a single function using Python."}, "labels": {"route": "code", "python": true, "scope": 0}}
+{"id": "test-007", "state": {"request": "Develop the missing functionality for a single function using JavaScript."}, "labels": {"route": "code", "python": false, "scope": 0}}
+{"id": "test-008", "state": {"request": "Develop the missing functionality for one complete service using Python."}, "labels": {"route": "code", "python": true, "scope": 1}}
+{"id": "test-009", "state": {"request": "Develop the missing functionality for one complete service using JavaScript."}, "labels": {"route": "code", "python": false, "scope": 1}}
+{"id": "test-010", "state": {"request": "Develop the missing functionality for several services using Python."}, "labels": {"route": "code", "python": true, "scope": 2}}
+{"id": "test-011", "state": {"request": "Develop the missing functionality for several services using JavaScript."}, "labels": {"route": "code", "python": false, "scope": 2}}
+{"id": "test-012", "state": {"request": "Refactor a single function in Python to remove duplicated logic."}, "labels": {"route": "code", "python": true, "scope": 0}}
+{"id": "test-013", "state": {"request": "Refactor a single function in JavaScript to remove duplicated logic."}, "labels": {"route": "code", "python": false, "scope": 0}}
+{"id": "test-014", "state": {"request": "Refactor one complete service in Python to remove duplicated logic."}, "labels": {"route": "code", "python": true, "scope": 1}}
+{"id": "test-015", "state": {"request": "Refactor one complete service in JavaScript to remove duplicated logic."}, "labels": {"route": "code", "python": false, "scope": 1}}
+{"id": "test-016", "state": {"request": "Refactor several services in Python to remove duplicated logic."}, "labels": {"route": "code", "python": true, "scope": 2}}
+{"id": "test-017", "state": {"request": "Refactor several services in JavaScript to remove duplicated logic."}, "labels": {"route": "code", "python": false, "scope": 2}}
+{"id": "test-018", "state": {"request": "Where is the published usage guide for a single function in Python?"}, "labels": {"route": "retrieve", "python": true, "scope": 0}}
+{"id": "test-019", "state": {"request": "Where is the published usage guide for a single function in JavaScript?"}, "labels": {"route": "retrieve", "python": false, "scope": 0}}
+{"id": "test-020", "state": {"request": "Where is the published usage guide for one complete service in Python?"}, "labels": {"route": "retrieve", "python": true, "scope": 1}}
+{"id": "test-021", "state": {"request": "Where is the published usage guide for one complete service in JavaScript?"}, "labels": {"route": "retrieve", "python": false, "scope": 1}}
+{"id": "test-022", "state": {"request": "Where is the published usage guide for several services in Python?"}, "labels": {"route": "retrieve", "python": true, "scope": 2}}
+{"id": "test-023", "state": {"request": "Where is the published usage guide for several services in JavaScript?"}, "labels": {"route": "retrieve", "python": false, "scope": 2}}
+{"id": "test-024", "state": {"request": "Identify the repository containing a single function written in Python."}, "labels": {"route": "retrieve", "python": true, "scope": 0}}
+{"id": "test-025", "state": {"request": "Identify the repository containing a single function written in JavaScript."}, "labels": {"route": "retrieve", "python": false, "scope": 0}}
+{"id": "test-026", "state": {"request": "Identify the repository containing one complete service written in Python."}, "labels": {"route": "retrieve", "python": true, "scope": 1}}
+{"id": "test-027", "state": {"request": "Identify the repository containing one complete service written in JavaScript."}, "labels": {"route": "retrieve", "python": false, "scope": 1}}
+{"id": "test-028", "state": {"request": "Identify the repository containing several services written in Python."}, "labels": {"route": "retrieve", "python": true, "scope": 2}}
+{"id": "test-029", "state": {"request": "Identify the repository containing several services written in JavaScript."}, "labels": {"route": "retrieve", "python": false, "scope": 2}}
+{"id": "test-030", "state": {"request": "Fetch the release notes describing a single function implemented in Python."}, "labels": {"route": "retrieve", "python": true, "scope": 0}}
+{"id": "test-031", "state": {"request": "Fetch the release notes describing a single function implemented in JavaScript."}, "labels": {"route": "retrieve", "python": false, "scope": 0}}
+{"id": "test-032", "state": {"request": "Fetch the release notes describing one complete service implemented in Python."}, "labels": {"route": "retrieve", "python": true, "scope": 1}}
+{"id": "test-033", "state": {"request": "Fetch the release notes describing one complete service implemented in JavaScript."}, "labels": {"route": "retrieve", "python": false, "scope": 1}}
+{"id": "test-034", "state": {"request": "Fetch the release notes describing several services implemented in Python."}, "labels": {"route": "retrieve", "python": true, "scope": 2}}
+{"id": "test-035", "state": {"request": "Fetch the release notes describing several services implemented in JavaScript."}, "labels": {"route": "retrieve", "python": false, "scope": 2}}
+{"id": "test-036", "state": {"request": "Give feedback on the maintainability of a single function in Python; leave the code unchanged."}, "labels": {"route": "review", "python": true, "scope": 0}}
+{"id": "test-037", "state": {"request": "Give feedback on the maintainability of a single function in JavaScript; leave the code unchanged."}, "labels": {"route": "review", "python": false, "scope": 0}}
+{"id": "test-038", "state": {"request": "Give feedback on the maintainability of one complete service in Python; leave the code unchanged."}, "labels": {"route": "review", "python": true, "scope": 1}}
+{"id": "test-039", "state": {"request": "Give feedback on the maintainability of one complete service in JavaScript; leave the code unchanged."}, "labels": {"route": "review", "python": false, "scope": 1}}
+{"id": "test-040", "state": {"request": "Give feedback on the maintainability of several services in Python; leave the code unchanged."}, "labels": {"route": "review", "python": true, "scope": 2}}
+{"id": "test-041", "state": {"request": "Give feedback on the maintainability of several services in JavaScript; leave the code unchanged."}, "labels": {"route": "review", "python": false, "scope": 2}}
+{"id": "test-042", "state": {"request": "Judge the quality of the proposed changes to a single function written in Python."}, "labels": {"route": "review", "python": true, "scope": 0}}
+{"id": "test-043", "state": {"request": "Judge the quality of the proposed changes to a single function written in JavaScript."}, "labels": {"route": "review", "python": false, "scope": 0}}
+{"id": "test-044", "state": {"request": "Judge the quality of the proposed changes to one complete service written in Python."}, "labels": {"route": "review", "python": true, "scope": 1}}
+{"id": "test-045", "state": {"request": "Judge the quality of the proposed changes to one complete service written in JavaScript."}, "labels": {"route": "review", "python": false, "scope": 1}}
+{"id": "test-046", "state": {"request": "Judge the quality of the proposed changes to several services written in Python."}, "labels": {"route": "review", "python": true, "scope": 2}}
+{"id": "test-047", "state": {"request": "Judge the quality of the proposed changes to several services written in JavaScript."}, "labels": {"route": "review", "python": false, "scope": 2}}
+{"id": "test-048", "state": {"request": "Inspect a single function in Python and report weaknesses without modifying anything."}, "labels": {"route": "review", "python": true, "scope": 0}}
+{"id": "test-049", "state": {"request": "Inspect a single function in JavaScript and report weaknesses without modifying anything."}, "labels": {"route": "review", "python": false, "scope": 0}}
+{"id": "test-050", "state": {"request": "Inspect one complete service in Python and report weaknesses without modifying anything."}, "labels": {"route": "review", "python": true, "scope": 1}}
+{"id": "test-051", "state": {"request": "Inspect one complete service in JavaScript and report weaknesses without modifying anything."}, "labels": {"route": "review", "python": false, "scope": 1}}
+{"id": "test-052", "state": {"request": "Inspect several services in Python and report weaknesses without modifying anything."}, "labels": {"route": "review", "python": true, "scope": 2}}
+{"id": "test-053", "state": {"request": "Inspect several services in JavaScript and report weaknesses without modifying anything."}, "labels": {"route": "review", "python": false, "scope": 2}}

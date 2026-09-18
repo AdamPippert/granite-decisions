@@ -1,0 +1,24 @@
+{
+  "route": {
+    "type": "choice",
+    "instructions": "Which workflow does the request ask for?",
+    "criteria": {
+      "code": "Implement or fix software.",
+      "retrieve": "Find existing information or documentation.",
+      "review": "Assess existing work without changing it."
+    }
+  },
+  "python": {
+    "type": "noul",
+    "instructions": "Is Python the programming language explicitly named in the request?"
+  },
+  "scope": {
+    "type": "score",
+    "instructions": "How broad is the explicitly stated scope of the work?",
+    "criteria": [
+      "One function",
+      "One complete service",
+      "Several services"
+    ]
+  }
+}

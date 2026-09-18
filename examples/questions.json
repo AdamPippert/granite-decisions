@@ -1,0 +1,21 @@
+{
+  "route": {
+    "type": "choice",
+    "instructions": "Which workflow best matches state.request? Choose unknown when the request is unclear or unrelated to these workflows.",
+    "criteria": {
+      "code": "Implement, debug, or test a specified software change.",
+      "retrieve": "Find or inspect evidence, files, or documentation.",
+      "review": "Evaluate an existing proposal or work product.",
+      "unknown": "Insufficient context, conflicting requests, or no suitable category."
+    }
+  },
+  "sufficient_context": {
+    "type": "noul",
+    "instructions": "Does state.request provide enough context to select a workflow?"
+  },
+  "complexity": {
+    "type": "score",
+    "instructions": "How much reasoning does the request require?",
+    "criteria": ["Direct lookup or routine action", "Several dependent steps", "Open-ended planning or uncertain tradeoffs"]
+  }
+}

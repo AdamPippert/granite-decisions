@@ -1,0 +1,54 @@
+{"id": "train-000", "state": {"request": "Implement the required changes in a single function using Python."}, "labels": {"route": "code", "python": true, "scope": 0}}
+{"id": "train-001", "state": {"request": "Implement the required changes in a single function using JavaScript."}, "labels": {"route": "code", "python": false, "scope": 0}}
+{"id": "train-002", "state": {"request": "Implement the required changes in one complete service using Python."}, "labels": {"route": "code", "python": true, "scope": 1}}
+{"id": "train-003", "state": {"request": "Implement the required changes in one complete service using JavaScript."}, "labels": {"route": "code", "python": false, "scope": 1}}
+{"id": "train-004", "state": {"request": "Implement the required changes in several services using Python."}, "labels": {"route": "code", "python": true, "scope": 2}}
+{"id": "train-005", "state": {"request": "Implement the required changes in several services using JavaScript."}, "labels": {"route": "code", "python": false, "scope": 2}}
+{"id": "train-006", "state": {"request": "Fix a bug in a single function written in Python."}, "labels": {"route": "code", "python": true, "scope": 0}}
+{"id": "train-007", "state": {"request": "Fix a bug in a single function written in JavaScript."}, "labels": {"route": "code", "python": false, "scope": 0}}
+{"id": "train-008", "state": {"request": "Fix a bug in one complete service written in Python."}, "labels": {"route": "code", "python": true, "scope": 1}}
+{"id": "train-009", "state": {"request": "Fix a bug in one complete service written in JavaScript."}, "labels": {"route": "code", "python": false, "scope": 1}}
+{"id": "train-010", "state": {"request": "Fix a bug in several services written in Python."}, "labels": {"route": "code", "python": true, "scope": 2}}
+{"id": "train-011", "state": {"request": "Fix a bug in several services written in JavaScript."}, "labels": {"route": "code", "python": false, "scope": 2}}
+{"id": "train-012", "state": {"request": "Write tests for a single function in Python."}, "labels": {"route": "code", "python": true, "scope": 0}}
+{"id": "train-013", "state": {"request": "Write tests for a single function in JavaScript."}, "labels": {"route": "code", "python": false, "scope": 0}}
+{"id": "train-014", "state": {"request": "Write tests for one complete service in Python."}, "labels": {"route": "code", "python": true, "scope": 1}}
+{"id": "train-015", "state": {"request": "Write tests for one complete service in JavaScript."}, "labels": {"route": "code", "python": false, "scope": 1}}
+{"id": "train-016", "state": {"request": "Write tests for several services in Python."}, "labels": {"route": "code", "python": true, "scope": 2}}
+{"id": "train-017", "state": {"request": "Write tests for several services in JavaScript."}, "labels": {"route": "code", "python": false, "scope": 2}}
+{"id": "train-018", "state": {"request": "Find the documentation for a single function written in Python."}, "labels": {"route": "retrieve", "python": true, "scope": 0}}
+{"id": "train-019", "state": {"request": "Find the documentation for a single function written in JavaScript."}, "labels": {"route": "retrieve", "python": false, "scope": 0}}
+{"id": "train-020", "state": {"request": "Find the documentation for one complete service written in Python."}, "labels": {"route": "retrieve", "python": true, "scope": 1}}
+{"id": "train-021", "state": {"request": "Find the documentation for one complete service written in JavaScript."}, "labels": {"route": "retrieve", "python": false, "scope": 1}}
+{"id": "train-022", "state": {"request": "Find the documentation for several services written in Python."}, "labels": {"route": "retrieve", "python": true, "scope": 2}}
+{"id": "train-023", "state": {"request": "Find the documentation for several services written in JavaScript."}, "labels": {"route": "retrieve", "python": false, "scope": 2}}
+{"id": "train-024", "state": {"request": "Locate the source files for a single function in Python."}, "labels": {"route": "retrieve", "python": true, "scope": 0}}
+{"id": "train-025", "state": {"request": "Locate the source files for a single function in JavaScript."}, "labels": {"route": "retrieve", "python": false, "scope": 0}}
+{"id": "train-026", "state": {"request": "Locate the source files for one complete service in Python."}, "labels": {"route": "retrieve", "python": true, "scope": 1}}
+{"id": "train-027", "state": {"request": "Locate the source files for one complete service in JavaScript."}, "labels": {"route": "retrieve", "python": false, "scope": 1}}
+{"id": "train-028", "state": {"request": "Locate the source files for several services in Python."}, "labels": {"route": "retrieve", "python": true, "scope": 2}}
+{"id": "train-029", "state": {"request": "Locate the source files for several services in JavaScript."}, "labels": {"route": "retrieve", "python": false, "scope": 2}}
+{"id": "train-030", "state": {"request": "Look up the API reference for a single function implemented in Python."}, "labels": {"route": "retrieve", "python": true, "scope": 0}}
+{"id": "train-031", "state": {"request": "Look up the API reference for a single function implemented in JavaScript."}, "labels": {"route": "retrieve", "python": false, "scope": 0}}
+{"id": "train-032", "state": {"request": "Look up the API reference for one complete service implemented in Python."}, "labels": {"route": "retrieve", "python": true, "scope": 1}}
+{"id": "train-033", "state": {"request": "Look up the API reference for one complete service implemented in JavaScript."}, "labels": {"route": "retrieve", "python": false, "scope": 1}}
+{"id": "train-034", "state": {"request": "Look up the API reference for several services implemented in Python."}, "labels": {"route": "retrieve", "python": true, "scope": 2}}
+{"id": "train-035", "state": {"request": "Look up the API reference for several services implemented in JavaScript."}, "labels": {"route": "retrieve", "python": false, "scope": 2}}
+{"id": "train-036", "state": {"request": "Review the design of a single function in Python."}, "labels": {"route": "review", "python": true, "scope": 0}}
+{"id": "train-037", "state": {"request": "Review the design of a single function in JavaScript."}, "labels": {"route": "review", "python": false, "scope": 0}}
+{"id": "train-038", "state": {"request": "Review the design of one complete service in Python."}, "labels": {"route": "review", "python": true, "scope": 1}}
+{"id": "train-039", "state": {"request": "Review the design of one complete service in JavaScript."}, "labels": {"route": "review", "python": false, "scope": 1}}
+{"id": "train-040", "state": {"request": "Review the design of several services in Python."}, "labels": {"route": "review", "python": true, "scope": 2}}
+{"id": "train-041", "state": {"request": "Review the design of several services in JavaScript."}, "labels": {"route": "review", "python": false, "scope": 2}}
+{"id": "train-042", "state": {"request": "Assess the test coverage of a single function written in Python."}, "labels": {"route": "review", "python": true, "scope": 0}}
+{"id": "train-043", "state": {"request": "Assess the test coverage of a single function written in JavaScript."}, "labels": {"route": "review", "python": false, "scope": 0}}
+{"id": "train-044", "state": {"request": "Assess the test coverage of one complete service written in Python."}, "labels": {"route": "review", "python": true, "scope": 1}}
+{"id": "train-045", "state": {"request": "Assess the test coverage of one complete service written in JavaScript."}, "labels": {"route": "review", "python": false, "scope": 1}}
+{"id": "train-046", "state": {"request": "Assess the test coverage of several services written in Python."}, "labels": {"route": "review", "python": true, "scope": 2}}
+{"id": "train-047", "state": {"request": "Assess the test coverage of several services written in JavaScript."}, "labels": {"route": "review", "python": false, "scope": 2}}
+{"id": "train-048", "state": {"request": "Evaluate the readability of a single function implemented in Python."}, "labels": {"route": "review", "python": true, "scope": 0}}
+{"id": "train-049", "state": {"request": "Evaluate the readability of a single function implemented in JavaScript."}, "labels": {"route": "review", "python": false, "scope": 0}}
+{"id": "train-050", "state": {"request": "Evaluate the readability of one complete service implemented in Python."}, "labels": {"route": "review", "python": true, "scope": 1}}
+{"id": "train-051", "state": {"request": "Evaluate the readability of one complete service implemented in JavaScript."}, "labels": {"route": "review", "python": false, "scope": 1}}
+{"id": "train-052", "state": {"request": "Evaluate the readability of several services implemented in Python."}, "labels": {"route": "review", "python": true, "scope": 2}}
+{"id": "train-053", "state": {"request": "Evaluate the readability of several services implemented in JavaScript."}, "labels": {"route": "review", "python": false, "scope": 2}}

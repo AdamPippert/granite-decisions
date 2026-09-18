@@ -1,0 +1,212 @@
+{
+  "metrics": {
+    "correctness": {
+      "applicable": true,
+      "score": 7.9,
+      "confidence": 0.54,
+      "summary": "Correctness and requirement fit is strong based on the supplied change context.",
+      "issues": [
+        {
+          "severity": "low",
+          "description": "The change creates a meaningful risk of breaking existing behavior.",
+          "suggestion": "Address the concrete requirement, edge-case, invariant, or regression risk before polishing structure."
+        }
+      ]
+    },
+    "cognitiveComplexity": {
+      "applicable": true,
+      "score": 7.8,
+      "confidence": 0.74,
+      "summary": "Cognitive complexity is strong based on the supplied change context.",
+      "issues": [
+        {
+          "severity": "low",
+          "description": "Control flow is harder to follow than the problem requires.",
+          "suggestion": "Simplify the hardest control or data flow while preserving a cohesive implementation."
+        }
+      ]
+    },
+    "readability": {
+      "applicable": true,
+      "score": 8.2,
+      "confidence": 0.69,
+      "summary": "Readability and intent is strong based on the supplied change context."
+    },
+    "modularity": {
+      "applicable": true,
+      "score": 7.7,
+      "confidence": 0.75,
+      "summary": "Modularity and cohesion is strong based on the supplied change context.",
+      "issues": [
+        {
+          "severity": "low",
+          "description": "Unrelated responsibilities are coupled in the same module or boundary.",
+          "suggestion": "Regroup responsibilities around cohesive domain behavior without creating gratuitous layers."
+        }
+      ]
+    },
+    "coupling": {
+      "applicable": true,
+      "score": 7.5,
+      "confidence": 0.63,
+      "summary": "Coupling and dependency quality is strong based on the supplied change context.",
+      "issues": [
+        {
+          "severity": "low",
+          "description": "A global or implicit dependency makes behavior harder to predict.",
+          "suggestion": "Remove or invert the dependency that most strongly leaks details or makes change unsafe."
+        }
+      ]
+    },
+    "changeability": {
+      "applicable": true,
+      "score": 7.6,
+      "confidence": 0.61,
+      "summary": "Changeability and change amplification is strong based on the supplied change context.",
+      "issues": [
+        {
+          "severity": "low",
+          "description": "A brittle dependency chain amplifies otherwise local changes.",
+          "suggestion": "Centralize the relevant knowledge or boundary so the next conceptual change has a small, predictable edit surface."
+        }
+      ]
+    },
+    "abstractionQuality": {
+      "applicable": true,
+      "score": 7.8,
+      "confidence": 0.76,
+      "summary": "Abstraction and API design is strong based on the supplied change context.",
+      "issues": [
+        {
+          "severity": "low",
+          "description": "One abstraction combines concepts that should vary independently.",
+          "suggestion": "Deepen, remove, or reshape the abstraction that currently adds more surface than value."
+        }
+      ]
+    },
+    "projectStructure": {
+      "applicable": true,
+      "score": 7.7,
+      "confidence": 0.61,
+      "summary": "Project and file structure is strong based on the supplied change context."
+    },
+    "duplication": {
+      "applicable": true,
+      "score": 7.7,
+      "confidence": 0.69,
+      "summary": "Duplication and reuse is strong based on the supplied change context."
+    },
+    "maintainability": {
+      "applicable": true,
+      "score": 7.6,
+      "confidence": 0.73,
+      "summary": "Maintainability is strong based on the supplied change context.",
+      "issues": [
+        {
+          "severity": "low",
+          "description": "The implementation has a high recurring cost to understand.",
+          "suggestion": "Reduce the highest recurring cost of understanding, changing, debugging, or testing this code."
+        }
+      ]
+    },
+    "testQuality": {
+      "applicable": true,
+      "score": 7,
+      "confidence": 0.71,
+      "summary": "Testability and test quality is acceptable but improvable based on the supplied change context.",
+      "issues": [
+        {
+          "severity": "low",
+          "description": "Important changed behavior lacks meaningful regression coverage.",
+          "suggestion": "Add or improve the smallest behavior-focused test that protects the important risk without overspecifying implementation."
+        }
+      ]
+    },
+    "reliability": {
+      "applicable": true,
+      "score": 7.9,
+      "confidence": 0.75,
+      "summary": "Reliability and error handling is strong based on the supplied change context."
+    },
+    "security": {
+      "applicable": true,
+      "score": 7.5,
+      "confidence": 0.69,
+      "summary": "Security is strong based on the supplied change context."
+    },
+    "consistency": {
+      "applicable": true,
+      "score": 7.9,
+      "confidence": 0.7,
+      "summary": "Consistency and conventions is strong based on the supplied change context.",
+      "issues": [
+        {
+          "severity": "low",
+          "description": "Related parts of the change follow inconsistent conventions.",
+          "suggestion": "Align the change with the repository's established pattern unless a documented constraint justifies the difference."
+        }
+      ]
+    },
+    "documentation": {
+      "applicable": true,
+      "score": 8.3,
+      "confidence": 0.69,
+      "summary": "Documentation and explainability is strong based on the supplied change context."
+    },
+    "performance": {
+      "applicable": true,
+      "score": 7.7,
+      "confidence": 0.71,
+      "summary": "Performance and resource efficiency is strong based on the supplied change context."
+    },
+    "scalability": {
+      "applicable": false
+    },
+    "compatibility": {
+      "applicable": true,
+      "score": 7.8,
+      "confidence": 0.62,
+      "summary": "Compatibility and API stability is strong based on the supplied change context."
+    },
+    "observability": {
+      "applicable": true,
+      "score": 7.7,
+      "confidence": 0.71,
+      "summary": "Observability and operability is strong based on the supplied change context.",
+      "issues": [
+        {
+          "severity": "low",
+          "description": "A relevant service boundary lacks a useful health or outcome signal.",
+          "suggestion": "Expose the smallest useful diagnostic signal for the credible production failure mode."
+        }
+      ]
+    }
+  },
+  "priorities": [
+    {
+      "metric": "testQuality",
+      "severity": "low",
+      "reason": "Important changed behavior lacks meaningful regression coverage."
+    },
+    {
+      "metric": "security",
+      "severity": "low",
+      "reason": "Security is strong based on the supplied change context."
+    },
+    {
+      "metric": "changeability",
+      "severity": "low",
+      "reason": "A brittle dependency chain amplifies otherwise local changes."
+    },
+    {
+      "metric": "coupling",
+      "severity": "low",
+      "reason": "A global or implicit dependency makes behavior harder to predict."
+    },
+    {
+      "metric": "correctness",
+      "severity": "low",
+      "reason": "The change creates a meaningful risk of breaking existing behavior."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+/workspace/scratch/e91b0941cfd3/granite-decisions/.venv/lib/python3.12/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+  from starlette.testclient import TestClient as TestClient  # noqa
+test_duplicate_question_definitions_cannot_learn_id_dependent_heads (test_core.Bundle.test_duplicate_question_definitions_cannot_learn_id_dependent_heads) ... ok
+test_tiny_calibration_not_promoted_to_fitted (test_core.Bundle.test_tiny_calibration_not_promoted_to_fitted) ... ok
+test_train_reload_and_predict_all_heads_one_feature_call (test_core.Bundle.test_train_reload_and_predict_all_heads_one_feature_call) ... ok
+test_identical_state_cannot_leak_under_new_id (test_core.Calibration.test_identical_state_cannot_leak_under_new_id) ... ok
+test_large_logits_stable (test_core.Calibration.test_large_logits_stable) ... ok
+test_temperature_reduces_overconfident_nll (test_core.Calibration.test_temperature_reduces_overconfident_nll) ... ok
+test_train_fit_separates_signal (test_core.Calibration.test_train_fit_separates_signal) ... ok
+test_zero_coverage_is_unknown_error_not_zero (test_core.Calibration.test_zero_coverage_is_unknown_error_not_zero) ... ok
+test_zero_observed_errors_still_has_uncertainty (test_core.Calibration.test_zero_observed_errors_still_has_uncertainty) ... ok
+test_bad_probability_mass_rejected (test_core.Contracts.test_bad_probability_mass_rejected) ... ok
+test_boolean_label_strict (test_core.Contracts.test_boolean_label_strict) ... ok
+test_boolean_not_ordinal_integer (test_core.Contracts.test_boolean_not_ordinal_integer) ... ok
+test_choice_accepts_255_null_descriptions_and_rejects_256 (test_core.Contracts.test_choice_accepts_255_null_descriptions_and_rejects_256) ... ok
+test_choice_output_cannot_escape_schema (test_core.Contracts.test_choice_output_cannot_escape_schema) ... ok
+test_depth_bounded (test_core.Contracts.test_depth_bounded) ... ok
+test_duplicate_json_keys_rejected (test_core.Contracts.test_duplicate_json_keys_rejected) ... ok
+test_invalid_structured_instructions_rejected (test_core.Contracts.test_invalid_structured_instructions_rejected) ... ok
+test_nonfinite_values_rejected (test_core.Contracts.test_nonfinite_values_rejected) ... ok
+test_ordinal_score_is_expectation (test_core.Contracts.test_ordinal_score_is_expectation) ... ok
+test_question_order_canonical (test_core.Contracts.test_question_order_canonical) ... ok
+test_score_accepts_ten_levels_and_rejects_eleven (test_core.Contracts.test_score_accepts_ten_levels_and_rejects_eleven) ... ok
+test_structured_rubric_roundtrips_and_keeps_level_order (test_core.Contracts.test_structured_rubric_roundtrips_and_keeps_level_order) ... ok
+test_uniform_confidence_is_zero (test_core.Contracts.test_uniform_confidence_is_zero) ... ok
+test_unknown_question_field_rejected (test_core.Contracts.test_unknown_question_field_rejected) ... ok
+test_default_does_not_save_state (test_core.Feedback.test_default_does_not_save_state) ... ok
+test_negative_history_retained_without_mutating_model (test_core.Feedback.test_negative_history_retained_without_mutating_model) ... ok
+test_unknown_correction_withdraws_training_label (test_core.Feedback.test_unknown_correction_withdraws_training_label) ... ok
+test_bad_policy_fails (test_core.Runtime.test_bad_policy_fails) ... ok
+test_explicit_experiment_remains_advisory (test_core.Runtime.test_explicit_experiment_remains_advisory) ... ok
+test_uncalibrated_abstains_despite_large_logits (test_core.Runtime.test_uncalibrated_abstains_despite_large_logits) ... ok
+test_unknown_option_abstains (test_core.Runtime.test_unknown_option_abstains) ... ok
+test_wrong_distribution_dimensions_rejected (test_core.Runtime.test_wrong_distribution_dimensions_rejected) ... ok
+test_default_provider_prevents_fullcollar_ignoring_abstention (test_fullcollar.Fullcollar.test_default_provider_prevents_fullcollar_ignoring_abstention) ... skipped 'optional Fullcollar installation unavailable'
+test_shadow_factory_fixes_mode (test_fullcollar.Fullcollar.test_shadow_factory_fixes_mode) ... skipped 'optional Fullcollar installation unavailable'
+test_typed_answers_pass_actual_fullcollar_contract (test_fullcollar.Fullcollar.test_typed_answers_pass_actual_fullcollar_contract) ... skipped 'optional Fullcollar installation unavailable'
+test_baseline_uses_all_candidate_probabilities_not_generated_text (test_native.Native.test_baseline_uses_all_candidate_probabilities_not_generated_text) ... ok
+test_budget_exceeded_before_inference (test_native.Native.test_budget_exceeded_before_inference) ... ok
+test_context_truncation_rejected (test_native.Native.test_context_truncation_rejected) ... ok
+test_gpu_device_listing_is_insufficient_offload_evidence (test_native.Native.test_gpu_device_listing_is_insufficient_offload_evidence) ... ok
+test_last_pool_embedding (test_native.Native.test_last_pool_embedding) ... ok
+test_loopback_only (test_native.Native.test_loopback_only) ... ok
+test_missing_low_probability_candidate_rejected (test_native.Native.test_missing_low_probability_candidate_rejected) ... ok
+test_runtime_change_rejected (test_native.Native.test_runtime_change_rejected) ... ok
+test_unpatched_baseline_rejected (test_native.Native.test_unpatched_baseline_rejected) ... ok
+test_wrong_pooling_rejected (test_native.Native.test_wrong_pooling_rejected) ... ok
+test_auth_and_typed_response (test_service.Service.test_auth_and_typed_response) ... ok
+test_body_limit (test_service.Service.test_body_limit) ... ok
+test_browser_origin_rejected (test_service.Service.test_browser_origin_rejected) ... ok
+test_documented_request_with_loaded_model_and_array_state (test_service.Service.test_documented_request_with_loaded_model_and_array_state) ... ok
+test_duplicate_key_rejected (test_service.Service.test_duplicate_key_rejected) ... ok
+test_request_cannot_change_policy (test_service.Service.test_request_cannot_change_policy) ... ok
+test_request_cannot_switch_to_an_unloaded_model (test_service.Service.test_request_cannot_switch_to_an_unloaded_model) ... ok
+
+----------------------------------------------------------------------
+Ran 52 tests in 0.184s
+
+OK (skipped=3)

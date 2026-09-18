@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "method": "supervised_candidate_cross_entropy_lora",
+  "quality_benchmark": false,
+  "model": "ibm-granite/granite-4.1-3b",
+  "revision": "c0650403e44e78ec0262dab1c90914c65b196c4e",
+  "seed": 17,
+  "steps": 3,
+  "learning_rate": 0.0001,
+  "trainable_parameters": 2621440,
+  "training_losses": [
+    3.576278118089249e-07,
+    0.008614521473646164,
+    0.0
+  ],
+  "gradient_norms": [
+    9.916126873577014e-05,
+    5.8061652183532715,
+    2.1904572378161902e-08
+  ],
+  "max_adapter_delta": 0.00027270085411146283,
+  "adapter_reload": "passed",
+  "validation_pairs": 6,
+  "validation_nll_before": 0.0458580099996387,
+  "validation_nll_after": 3.7917006810506186,
+  "calibration": "not_fitted",
+  "data_hashes": {
+    "train": "5e4e63df7971f62cfe852cdfae12b9a072b206fe7a1396d469e23ff2cc707134",
+    "validation": "6b7ae11ed1e45cbc3e74b4ec5d0c6044d6b3e6bd7a658e8922e84c6430e60d93",
+    "questions": "28648806e63ead6a4f7f987271cd0ff486b183885e4638549527ca45357229c9"
+  },
+  "gpu": "AMD Radeon 8060S Graphics",
+  "hip": "7.2.26015",
+  "versions": {
+    "torch": "2.11.0+rocm7.2",
+    "transformers": "4.57.6",
+    "peft": "0.18.1",
+    "accelerate": "1.12.0"
+  },
+  "peak_gpu_allocated_bytes": 6953512448,
+  "elapsed_seconds": 4.928878428996541
+}

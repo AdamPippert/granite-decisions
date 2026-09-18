@@ -1,0 +1,31 @@
+{
+  "model": "ibm-granite/granite-4.1-3b",
+  "state": [
+    {"role": "user", "content": "The CSV export fails. I need the report before tomorrow's review."}
+  ],
+  "questions": {
+    "Assigned team": {
+      "type": "choice",
+      "instructions": {"question": "Which team should investigate?", "context": ["This is a product support request."]},
+      "criteria": {
+        "Engineering": {"scope": ["Product defects", "Broken features"]},
+        "Customer support": "How-to guidance and account questions",
+        "unknown": null
+      }
+    },
+    "Urgency": {
+      "type": "score",
+      "instructions": ["Assess the stated deadline.", "Use only timing explicitly present in the state."],
+      "criteria": [
+        {"description": "No deadline stated"},
+        {"description": "Deadline within the next several days"},
+        {"description": "Immediate deadline or active emergency"}
+      ]
+    },
+    "Has workaround": {
+      "type": "noul",
+      "instructions": "Does the user explicitly describe a working alternative?",
+      "criteria": {"true": "A working alternative is stated", "false": "No working alternative is stated"}
+    }
+  }
+}

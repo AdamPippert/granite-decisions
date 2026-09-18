@@ -1,0 +1,9 @@
+# Observed direct/runtime/test package versions; not a complete transitive lock.
+numpy==2.3.5
+scipy==1.17.0
+fastapi==0.141.1
+starlette==1.6.0
+pydantic==2.13.5
+uvicorn==0.53.0
+httpx==0.28.1
+anyio==4.15.1

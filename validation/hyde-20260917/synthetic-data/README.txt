@@ -1,0 +1,1 @@
+Synthetic integration fixtures only: 54 rows per split, 3 questions. Templates are grouped by split, but topics and vocabulary overlap. Not independent real-world evidence or a publication quality benchmark. Labels were assigned by construction. License: MIT.

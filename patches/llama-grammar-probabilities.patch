@@ -1,0 +1,27 @@
+diff --git a/tools/server/server-context.cpp b/tools/server/server-context.cpp
+index b6835e4..db95786 100644
+--- a/tools/server/server-context.cpp
++++ b/tools/server/server-context.cpp
+@@ -3853,7 +3853,11 @@ private:
+             llama_token id;
+             {
+                 scoped_timer timer(t_sampl, n_sampl);
+-                id = common_sampler_sample(slot.smpl.get(), slot.ctx_tgt, tok_idx);
++                // Post-sampling probabilities must include the grammar even when
++                // the first sampled token is valid under rejection sampling.
++                const bool grammar_first = slot.task->params.post_sampling_probs &&
++                                           slot.task->params.sampling.n_probs > 0;
++                id = common_sampler_sample(slot.smpl.get(), slot.ctx_tgt, tok_idx, grammar_first);
+             }
+ 
+             slot.i_batch = -1;
+@@ -4631,6 +4635,9 @@ static json get_res_props(const server_context_meta & meta, const common_params
+         { "bos_token",                   meta.bos_token_str },
+         { "eos_token",                   meta.eos_token_str },
+         { "build_info",                  meta.build_info },
++        { "granite_decisions_grammar_probs", 1 },
++        { "granite_decisions_pooling",       int(meta.pooling_type) },
++        { "granite_decisions_gpu_layers",    params.n_gpu_layers },
+         { "is_sleeping",                 is_sleeping },
+         { "cors_proxy_enabled",          params.ui_mcp_proxy },
+     };

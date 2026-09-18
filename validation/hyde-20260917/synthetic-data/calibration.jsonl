@@ -1,0 +1,54 @@
+{"id": "calibration-000", "state": {"request": "Add input validation to a single function written in Python."}, "labels": {"route": "code", "python": true, "scope": 0}}
+{"id": "calibration-001", "state": {"request": "Add input validation to a single function written in JavaScript."}, "labels": {"route": "code", "python": false, "scope": 0}}
+{"id": "calibration-002", "state": {"request": "Add input validation to one complete service written in Python."}, "labels": {"route": "code", "python": true, "scope": 1}}
+{"id": "calibration-003", "state": {"request": "Add input validation to one complete service written in JavaScript."}, "labels": {"route": "code", "python": false, "scope": 1}}
+{"id": "calibration-004", "state": {"request": "Add input validation to several services written in Python."}, "labels": {"route": "code", "python": true, "scope": 2}}
+{"id": "calibration-005", "state": {"request": "Add input validation to several services written in JavaScript."}, "labels": {"route": "code", "python": false, "scope": 2}}
+{"id": "calibration-006", "state": {"request": "Repair the error handling in a single function using Python."}, "labels": {"route": "code", "python": true, "scope": 0}}
+{"id": "calibration-007", "state": {"request": "Repair the error handling in a single function using JavaScript."}, "labels": {"route": "code", "python": false, "scope": 0}}
+{"id": "calibration-008", "state": {"request": "Repair the error handling in one complete service using Python."}, "labels": {"route": "code", "python": true, "scope": 1}}
+{"id": "calibration-009", "state": {"request": "Repair the error handling in one complete service using JavaScript."}, "labels": {"route": "code", "python": false, "scope": 1}}
+{"id": "calibration-010", "state": {"request": "Repair the error handling in several services using Python."}, "labels": {"route": "code", "python": true, "scope": 2}}
+{"id": "calibration-011", "state": {"request": "Repair the error handling in several services using JavaScript."}, "labels": {"route": "code", "python": false, "scope": 2}}
+{"id": "calibration-012", "state": {"request": "Implement logging for a single function in Python."}, "labels": {"route": "code", "python": true, "scope": 0}}
+{"id": "calibration-013", "state": {"request": "Implement logging for a single function in JavaScript."}, "labels": {"route": "code", "python": false, "scope": 0}}
+{"id": "calibration-014", "state": {"request": "Implement logging for one complete service in Python."}, "labels": {"route": "code", "python": true, "scope": 1}}
+{"id": "calibration-015", "state": {"request": "Implement logging for one complete service in JavaScript."}, "labels": {"route": "code", "python": false, "scope": 1}}
+{"id": "calibration-016", "state": {"request": "Implement logging for several services in Python."}, "labels": {"route": "code", "python": true, "scope": 2}}
+{"id": "calibration-017", "state": {"request": "Implement logging for several services in JavaScript."}, "labels": {"route": "code", "python": false, "scope": 2}}
+{"id": "calibration-018", "state": {"request": "Show me the existing documentation describing a single function in Python."}, "labels": {"route": "retrieve", "python": true, "scope": 0}}
+{"id": "calibration-019", "state": {"request": "Show me the existing documentation describing a single function in JavaScript."}, "labels": {"route": "retrieve", "python": false, "scope": 0}}
+{"id": "calibration-020", "state": {"request": "Show me the existing documentation describing one complete service in Python."}, "labels": {"route": "retrieve", "python": true, "scope": 1}}
+{"id": "calibration-021", "state": {"request": "Show me the existing documentation describing one complete service in JavaScript."}, "labels": {"route": "retrieve", "python": false, "scope": 1}}
+{"id": "calibration-022", "state": {"request": "Show me the existing documentation describing several services in Python."}, "labels": {"route": "retrieve", "python": true, "scope": 2}}
+{"id": "calibration-023", "state": {"request": "Show me the existing documentation describing several services in JavaScript."}, "labels": {"route": "retrieve", "python": false, "scope": 2}}
+{"id": "calibration-024", "state": {"request": "Search for the deployment guide covering a single function written in Python."}, "labels": {"route": "retrieve", "python": true, "scope": 0}}
+{"id": "calibration-025", "state": {"request": "Search for the deployment guide covering a single function written in JavaScript."}, "labels": {"route": "retrieve", "python": false, "scope": 0}}
+{"id": "calibration-026", "state": {"request": "Search for the deployment guide covering one complete service written in Python."}, "labels": {"route": "retrieve", "python": true, "scope": 1}}
+{"id": "calibration-027", "state": {"request": "Search for the deployment guide covering one complete service written in JavaScript."}, "labels": {"route": "retrieve", "python": false, "scope": 1}}
+{"id": "calibration-028", "state": {"request": "Search for the deployment guide covering several services written in Python."}, "labels": {"route": "retrieve", "python": true, "scope": 2}}
+{"id": "calibration-029", "state": {"request": "Search for the deployment guide covering several services written in JavaScript."}, "labels": {"route": "retrieve", "python": false, "scope": 2}}
+{"id": "calibration-030", "state": {"request": "Retrieve the change history of a single function implemented in Python."}, "labels": {"route": "retrieve", "python": true, "scope": 0}}
+{"id": "calibration-031", "state": {"request": "Retrieve the change history of a single function implemented in JavaScript."}, "labels": {"route": "retrieve", "python": false, "scope": 0}}
+{"id": "calibration-032", "state": {"request": "Retrieve the change history of one complete service implemented in Python."}, "labels": {"route": "retrieve", "python": true, "scope": 1}}
+{"id": "calibration-033", "state": {"request": "Retrieve the change history of one complete service implemented in JavaScript."}, "labels": {"route": "retrieve", "python": false, "scope": 1}}
+{"id": "calibration-034", "state": {"request": "Retrieve the change history of several services implemented in Python."}, "labels": {"route": "retrieve", "python": true, "scope": 2}}
+{"id": "calibration-035", "state": {"request": "Retrieve the change history of several services implemented in JavaScript."}, "labels": {"route": "retrieve", "python": false, "scope": 2}}
+{"id": "calibration-036", "state": {"request": "Audit a single function written in Python for security problems without editing it."}, "labels": {"route": "review", "python": true, "scope": 0}}
+{"id": "calibration-037", "state": {"request": "Audit a single function written in JavaScript for security problems without editing it."}, "labels": {"route": "review", "python": false, "scope": 0}}
+{"id": "calibration-038", "state": {"request": "Audit one complete service written in Python for security problems without editing it."}, "labels": {"route": "review", "python": true, "scope": 1}}
+{"id": "calibration-039", "state": {"request": "Audit one complete service written in JavaScript for security problems without editing it."}, "labels": {"route": "review", "python": false, "scope": 1}}
+{"id": "calibration-040", "state": {"request": "Audit several services written in Python for security problems without editing it."}, "labels": {"route": "review", "python": true, "scope": 2}}
+{"id": "calibration-041", "state": {"request": "Audit several services written in JavaScript for security problems without editing it."}, "labels": {"route": "review", "python": false, "scope": 2}}
+{"id": "calibration-042", "state": {"request": "Critique the proposed architecture of a single function in Python."}, "labels": {"route": "review", "python": true, "scope": 0}}
+{"id": "calibration-043", "state": {"request": "Critique the proposed architecture of a single function in JavaScript."}, "labels": {"route": "review", "python": false, "scope": 0}}
+{"id": "calibration-044", "state": {"request": "Critique the proposed architecture of one complete service in Python."}, "labels": {"route": "review", "python": true, "scope": 1}}
+{"id": "calibration-045", "state": {"request": "Critique the proposed architecture of one complete service in JavaScript."}, "labels": {"route": "review", "python": false, "scope": 1}}
+{"id": "calibration-046", "state": {"request": "Critique the proposed architecture of several services in Python."}, "labels": {"route": "review", "python": true, "scope": 2}}
+{"id": "calibration-047", "state": {"request": "Critique the proposed architecture of several services in JavaScript."}, "labels": {"route": "review", "python": false, "scope": 2}}
+{"id": "calibration-048", "state": {"request": "Check whether a single function in Python meets the stated requirements without changing it."}, "labels": {"route": "review", "python": true, "scope": 0}}
+{"id": "calibration-049", "state": {"request": "Check whether a single function in JavaScript meets the stated requirements without changing it."}, "labels": {"route": "review", "python": false, "scope": 0}}
+{"id": "calibration-050", "state": {"request": "Check whether one complete service in Python meets the stated requirements without changing it."}, "labels": {"route": "review", "python": true, "scope": 1}}
+{"id": "calibration-051", "state": {"request": "Check whether one complete service in JavaScript meets the stated requirements without changing it."}, "labels": {"route": "review", "python": false, "scope": 1}}
+{"id": "calibration-052", "state": {"request": "Check whether several services in Python meets the stated requirements without changing it."}, "labels": {"route": "review", "python": true, "scope": 2}}
+{"id": "calibration-053", "state": {"request": "Check whether several services in JavaScript meets the stated requirements without changing it."}, "labels": {"route": "review", "python": false, "scope": 2}}

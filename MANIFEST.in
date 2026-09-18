@@ -1,0 +1,7 @@
+include LICENSE README.md MODEL_CARD.md CONTRIBUTING.md TRAINING.md VALIDATION.md TYPESAFE-COMPATIBILITY.md requirements-tested.txt
+recursive-include examples *.json *.jsonl *.py
+recursive-include deploy *.sh
+recursive-include scripts *.py
+recursive-include patches *.patch LLAMA-LICENSE
+recursive-include tests *.py
+recursive-include validation *.json *.jsonl *.txt *.md
