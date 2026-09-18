@@ -7,5 +7,6 @@
   "steps": 2500,
   "eval_every": 75,
   "grid": "learning rates 1e-5/3e-5, seeds 17/29; early stop after 3 stale validations",
-  "evaluation_batch_size": 1
+  "evaluation_batch_size": 1,
+  "runtime_user": "adam"
 }

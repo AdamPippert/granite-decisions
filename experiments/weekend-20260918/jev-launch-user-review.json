@@ -1,0 +1,237 @@
+{
+  "evaluation": {
+    "metrics": {
+      "correctness": {
+        "applicable": true,
+        "score": 7.8,
+        "confidence": 0.67,
+        "summary": "Correctness and requirement fit is strong based on the supplied change context."
+      },
+      "cognitiveComplexity": {
+        "applicable": true,
+        "score": 7.8,
+        "confidence": 0.72,
+        "summary": "Cognitive complexity is strong based on the supplied change context."
+      },
+      "readability": {
+        "applicable": true,
+        "score": 7.8,
+        "confidence": 0.75,
+        "summary": "Readability and intent is strong based on the supplied change context.",
+        "issues": [
+          {
+            "severity": "low",
+            "description": "Comments are missing where rationale matters or add noise without rationale.",
+            "suggestion": "Make intent explicit through clearer naming, flow, or responsibility boundaries."
+          }
+        ]
+      },
+      "modularity": {
+        "applicable": false
+      },
+      "coupling": {
+        "applicable": false
+      },
+      "changeability": {
+        "applicable": true,
+        "score": 7.9,
+        "confidence": 0.72,
+        "summary": "Changeability and change amplification is strong based on the supplied change context.",
+        "issues": [
+          {
+            "severity": "low",
+            "description": "A domain rule or decision is scattered across multiple locations.",
+            "suggestion": "Centralize the relevant knowledge or boundary so the next conceptual change has a small, predictable edit surface."
+          }
+        ]
+      },
+      "abstractionQuality": {
+        "applicable": false
+      },
+      "projectStructure": {
+        "applicable": false
+      },
+      "duplication": {
+        "applicable": false
+      },
+      "maintainability": {
+        "applicable": true,
+        "score": 7.4,
+        "confidence": 0.65,
+        "summary": "Maintainability is strong based on the supplied change context."
+      },
+      "testQuality": {
+        "applicable": true,
+        "score": 6.9,
+        "confidence": 0.58,
+        "summary": "Testability and test quality is acceptable but improvable based on the supplied change context.",
+        "issues": [
+          {
+            "severity": "low",
+            "description": "Important changed behavior lacks meaningful regression coverage.",
+            "suggestion": "Add or improve the smallest behavior-focused test that protects the important risk without overspecifying implementation."
+          }
+        ]
+      },
+      "reliability": {
+        "applicable": true,
+        "score": 7.5,
+        "confidence": 0.69,
+        "summary": "Reliability and error handling is strong based on the supplied change context."
+      },
+      "security": {
+        "applicable": true,
+        "score": 7.3,
+        "confidence": 0.68,
+        "summary": "Security is strong based on the supplied change context."
+      },
+      "consistency": {
+        "applicable": true,
+        "score": 7.6,
+        "confidence": 0.69,
+        "summary": "Consistency and conventions is strong based on the supplied change context."
+      },
+      "documentation": {
+        "applicable": true,
+        "score": 7,
+        "confidence": 0.57,
+        "summary": "Documentation and explainability is acceptable but improvable based on the supplied change context.",
+        "issues": [
+          {
+            "severity": "low",
+            "description": "Required configuration or operational use is insufficiently documented.",
+            "suggestion": "Document the non-obvious contract, constraint, configuration, or rationale at the narrowest useful location."
+          }
+        ]
+      },
+      "performance": {
+        "applicable": false
+      },
+      "scalability": {
+        "applicable": false
+      },
+      "compatibility": {
+        "applicable": false
+      },
+      "observability": {
+        "applicable": true,
+        "score": 7.4,
+        "confidence": 0.72,
+        "summary": "Observability and operability is strong based on the supplied change context.",
+        "issues": [
+          {
+            "severity": "low",
+            "description": "A relevant service boundary lacks a useful health or outcome signal.",
+            "suggestion": "Expose the smallest useful diagnostic signal for the credible production failure mode."
+          }
+        ]
+      }
+    },
+    "priorities": [
+      {
+        "metric": "testQuality",
+        "severity": "low",
+        "reason": "Important changed behavior lacks meaningful regression coverage."
+      },
+      {
+        "metric": "security",
+        "severity": "low",
+        "reason": "Security is strong based on the supplied change context."
+      },
+      {
+        "metric": "documentation",
+        "severity": "low",
+        "reason": "Required configuration or operational use is insufficiently documented."
+      },
+      {
+        "metric": "maintainability",
+        "severity": "low",
+        "reason": "Maintainability is strong based on the supplied change context."
+      },
+      {
+        "metric": "correctness",
+        "severity": "low",
+        "reason": "Correctness and requirement fit is strong based on the supplied change context."
+      }
+    ],
+    "improvements": [],
+    "regressions": [
+      "Testability and test quality: 8 → 6.9",
+      "Documentation and explainability: 8.4 → 7",
+      "Observability and operability: 8.4 → 7.4"
+    ],
+    "comparison": [
+      {
+        "metric": "correctness",
+        "previousScore": 7.7,
+        "currentScore": 7.8,
+        "delta": 0.1,
+        "direction": "unchanged"
+      },
+      {
+        "metric": "cognitiveComplexity",
+        "previousScore": 7.9,
+        "currentScore": 7.8,
+        "delta": -0.1,
+        "direction": "unchanged"
+      },
+      {
+        "metric": "readability",
+        "previousScore": 8.2,
+        "currentScore": 7.8,
+        "delta": -0.4,
+        "direction": "unchanged"
+      },
+      {
+        "metric": "changeability",
+        "previousScore": 7.6,
+        "currentScore": 7.9,
+        "delta": 0.3,
+        "direction": "unchanged"
+      },
+      {
+        "metric": "maintainability",
+        "previousScore": 7.7,
+        "currentScore": 7.4,
+        "delta": -0.3,
+        "direction": "unchanged"
+      },
+      {
+        "metric": "testQuality",
+        "previousScore": 8,
+        "currentScore": 6.9,
+        "delta": -1.1,
+        "direction": "regressed"
+      },
+      {
+        "metric": "reliability",
+        "previousScore": 7.8,
+        "currentScore": 7.5,
+        "delta": -0.3,
+        "direction": "unchanged"
+      },
+      {
+        "metric": "consistency",
+        "previousScore": 7.9,
+        "currentScore": 7.6,
+        "delta": -0.3,
+        "direction": "unchanged"
+      },
+      {
+        "metric": "documentation",
+        "previousScore": 8.4,
+        "currentScore": 7,
+        "delta": -1.4,
+        "direction": "regressed"
+      },
+      {
+        "metric": "observability",
+        "previousScore": 8.4,
+        "currentScore": 7.4,
+        "delta": -1,
+        "direction": "regressed"
+      }
+    ]
+  },
+  "disposition": "Concrete account mismatch was fixed and verified under actual container users. Generic review suggestions do not identify further actionable defects; retain tested explicit user plus runtime identity guard."
+}

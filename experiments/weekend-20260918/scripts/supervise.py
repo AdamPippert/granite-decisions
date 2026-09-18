@@ -6,6 +6,7 @@ import hashlib
 import importlib.metadata
 import json
 import os
+import pwd
 from pathlib import Path
 import signal
 import subprocess
@@ -38,6 +39,8 @@ def check(root):
     verify_inventory(root,'RUNTIME_SHA256SUMS')
     verify_inventory(root,'SHA256SUMS')
     config=json.loads((root/'schedule.json').read_text())
+    if pwd.getpwuid(os.geteuid()).pw_name!=config['runtime_user']:
+        raise ValueError('wrong runtime user')
     stamps=[datetime.fromisoformat(config[k]) for k in ('start','train_until','finish_until','hard_stop')]
     if any(x.tzinfo is None for x in stamps):raise ValueError('timezone required')
     if stamps!=sorted(set(stamps)):raise ValueError('invalid deadline order')

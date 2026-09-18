@@ -42,6 +42,9 @@
     "experiments/weekend-20260918/scripts/dispatch.sh",
     "experiments/weekend-20260918/scripts/launch-supervisor.sh"
   ],
-  "runtime_inventory_sha256": "d9fa9696399fbf2580ff3578763a7814817c2b8156edf74b88e87157cae43844",
-  "automatic_weight_publication": false
+  "runtime_inventory_sha256": "5f76fa048dbba509174e92e6fd4b1ad98e879f5bb4010f62efe8fd431b54e57a",
+  "automatic_weight_publication": false,
+  "runtime_user": "adam",
+  "root_launch_rejected": true,
+  "detached_user_launch_verified": true
 }

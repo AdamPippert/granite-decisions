@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "fresh_process": true,
+  "adapter": "/var/home/adam/Development/granite-decisions/experiments/weekend-20260918/pilot-single/checkpoints/lr1e-05-seed17-step2",
+  "probes": 3,
+  "max_logit_errors": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "adapter_identity": {
+    "adapter_config.json": "ad9616a769952b1d4e2d7dac8af83d93a75fdcceef0695eb488cb4457038c74e",
+    "adapter_model.safetensors": "e3cd604343a1920beeab2e3d9582fd87b51f7706f00f4b4d16b6e3d0d8809393",
+    "decision_manifest.json": "79b7682ec69ddcb7dc6ffe6416002af52a49dc0fc03c7e1a39fccbd52f617459"
+  }
+}

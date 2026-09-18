@@ -5,7 +5,7 @@ gd_remote=/var/home/adam/Development/granite-decisions/experiments/weekend-20260
 gd_ssh=(ssh -F /dev/null -i /home/adam/.ssh/homelab-hosts -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes -o BatchMode=yes -o ConnectTimeout=15 adam@hyde-fedora.tail4df14e.ts.net)
 case "${1:-}" in
   start)
-    "${gd_ssh[@]}" "test ! -e $gd_remote/launch.json && test ! -e $gd_remote/run && test ! -e $gd_remote/CANCEL && podman exec --detach granite-decisions-rocm /usr/bin/bash $gd_remote/runtime/experiments/weekend-20260918/scripts/launch-supervisor.sh"
+    "${gd_ssh[@]}" "test ! -e $gd_remote/launch.json && test ! -e $gd_remote/run && test ! -e $gd_remote/CANCEL && podman exec --detach --user adam granite-decisions-rocm /usr/bin/bash $gd_remote/runtime/experiments/weekend-20260918/scripts/launch-supervisor.sh"
     # Podman detach only acknowledges spawning. Verify trainer launch separately.
     for gd_attempt in {1..12}; do
       if "${gd_ssh[@]}" "test -f $gd_remote/launch.json && cat $gd_remote/supervisor-status.json"; then exit 0; fi
