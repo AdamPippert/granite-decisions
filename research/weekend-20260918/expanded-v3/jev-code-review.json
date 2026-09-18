@@ -1,0 +1,577 @@
+{
+  "initial": {
+    "metrics": {
+      "correctness": {
+        "applicable": true,
+        "score": 5.3,
+        "confidence": 0.35,
+        "summary": "Correctness and requirement fit is acceptable but improvable based on the supplied change context.",
+        "issues": [
+          {
+            "severity": "low",
+            "description": "An important edge case or invalid state appears insufficiently handled.",
+            "suggestion": "Address the concrete requirement, edge-case, invariant, or regression risk before polishing structure."
+          }
+        ]
+      },
+      "cognitiveComplexity": {
+        "applicable": true,
+        "score": 6,
+        "confidence": 0.41,
+        "summary": "Cognitive complexity is acceptable but improvable based on the supplied change context.",
+        "issues": [
+          {
+            "severity": "low",
+            "description": "Special cases add disproportionate mental overhead.",
+            "suggestion": "Simplify the hardest control or data flow while preserving a cohesive implementation."
+          }
+        ]
+      },
+      "readability": {
+        "applicable": true,
+        "score": 6.6,
+        "confidence": 0.54,
+        "summary": "Readability and intent is acceptable but improvable based on the supplied change context.",
+        "issues": [
+          {
+            "severity": "low",
+            "description": "Comments are missing where rationale matters or add noise without rationale.",
+            "suggestion": "Make intent explicit through clearer naming, flow, or responsibility boundaries."
+          }
+        ]
+      },
+      "modularity": {
+        "applicable": true,
+        "score": 6.3,
+        "confidence": 0.54,
+        "summary": "Modularity and cohesion is acceptable but improvable based on the supplied change context.",
+        "issues": [
+          {
+            "severity": "low",
+            "description": "One module owns too many independently changing concerns.",
+            "suggestion": "Regroup responsibilities around cohesive domain behavior without creating gratuitous layers."
+          }
+        ]
+      },
+      "coupling": {
+        "applicable": true,
+        "score": 6.4,
+        "confidence": 0.53,
+        "summary": "Coupling and dependency quality is acceptable but improvable based on the supplied change context.",
+        "issues": [
+          {
+            "severity": "low",
+            "description": "A global or implicit dependency makes behavior harder to predict.",
+            "suggestion": "Remove or invert the dependency that most strongly leaks details or makes change unsafe."
+          }
+        ]
+      },
+      "changeability": {
+        "applicable": true,
+        "score": 5.8,
+        "confidence": 0.39,
+        "summary": "Changeability and change amplification is acceptable but improvable based on the supplied change context.",
+        "issues": [
+          {
+            "severity": "low",
+            "description": "A small conceptual change is likely to require edits in many places.",
+            "suggestion": "Centralize the relevant knowledge or boundary so the next conceptual change has a small, predictable edit surface."
+          }
+        ]
+      },
+      "abstractionQuality": {
+        "applicable": true,
+        "score": 6.7,
+        "confidence": 0.59,
+        "summary": "Abstraction and API design is acceptable but improvable based on the supplied change context.",
+        "issues": [
+          {
+            "severity": "low",
+            "description": "One abstraction combines concepts that should vary independently.",
+            "suggestion": "Deepen, remove, or reshape the abstraction that currently adds more surface than value."
+          }
+        ]
+      },
+      "projectStructure": {
+        "applicable": true,
+        "score": 6.2,
+        "confidence": 0.48,
+        "summary": "Project and file structure is acceptable but improvable based on the supplied change context."
+      },
+      "duplication": {
+        "applicable": true,
+        "score": 6.4,
+        "confidence": 0.46,
+        "summary": "Duplication and reuse is acceptable but improvable based on the supplied change context."
+      },
+      "maintainability": {
+        "applicable": true,
+        "score": 5.7,
+        "confidence": 0.36,
+        "summary": "Maintainability is acceptable but improvable based on the supplied change context.",
+        "issues": [
+          {
+            "severity": "low",
+            "description": "Routine modification is likely to be slow or error-prone.",
+            "suggestion": "Reduce the highest recurring cost of understanding, changing, debugging, or testing this code."
+          }
+        ]
+      },
+      "testQuality": {
+        "applicable": true,
+        "score": 6,
+        "confidence": 0.42,
+        "summary": "Testability and test quality is acceptable but improvable based on the supplied change context.",
+        "issues": [
+          {
+            "severity": "low",
+            "description": "Important changed behavior lacks meaningful regression coverage.",
+            "suggestion": "Add or improve the smallest behavior-focused test that protects the important risk without overspecifying implementation."
+          }
+        ]
+      },
+      "reliability": {
+        "applicable": true,
+        "score": 6,
+        "confidence": 0.45,
+        "summary": "Reliability and error handling is acceptable but improvable based on the supplied change context.",
+        "issues": [
+          {
+            "severity": "low",
+            "description": "Errors are swallowed, distorted, or propagated without useful boundaries.",
+            "suggestion": "Handle the most credible failure path deliberately, including cleanup and propagation where relevant."
+          }
+        ]
+      },
+      "security": {
+        "applicable": true,
+        "score": 7.1,
+        "confidence": 0.52,
+        "summary": "Security is strong based on the supplied change context."
+      },
+      "consistency": {
+        "applicable": true,
+        "score": 6,
+        "confidence": 0.38,
+        "summary": "Consistency and conventions is acceptable but improvable based on the supplied change context.",
+        "issues": [
+          {
+            "severity": "low",
+            "description": "Related parts of the change follow inconsistent conventions.",
+            "suggestion": "Align the change with the repository's established pattern unless a documented constraint justifies the difference."
+          }
+        ]
+      },
+      "documentation": {
+        "applicable": true,
+        "score": 6.5,
+        "confidence": 0.46,
+        "summary": "Documentation and explainability is acceptable but improvable based on the supplied change context.",
+        "issues": [
+          {
+            "severity": "low",
+            "description": "A non-obvious decision or constraint lacks an explanation of why.",
+            "suggestion": "Document the non-obvious contract, constraint, configuration, or rationale at the narrowest useful location."
+          }
+        ]
+      },
+      "performance": {
+        "applicable": true,
+        "score": 5.7,
+        "confidence": 0.34,
+        "summary": "Performance and resource efficiency is acceptable but improvable based on the supplied change context.",
+        "issues": [
+          {
+            "severity": "low",
+            "description": "Meaningful computation or I/O is repeated unnecessarily.",
+            "suggestion": "Optimize only the evidenced hot path or waste, keeping the design proportionate."
+          }
+        ]
+      },
+      "scalability": {
+        "applicable": false
+      },
+      "compatibility": {
+        "applicable": false
+      },
+      "observability": {
+        "applicable": false
+      }
+    },
+    "priorities": [
+      {
+        "metric": "correctness",
+        "severity": "low",
+        "reason": "An important edge case or invalid state appears insufficiently handled."
+      },
+      {
+        "metric": "changeability",
+        "severity": "low",
+        "reason": "A small conceptual change is likely to require edits in many places."
+      },
+      {
+        "metric": "maintainability",
+        "severity": "low",
+        "reason": "Routine modification is likely to be slow or error-prone."
+      },
+      {
+        "metric": "cognitiveComplexity",
+        "severity": "low",
+        "reason": "Special cases add disproportionate mental overhead."
+      },
+      {
+        "metric": "testQuality",
+        "severity": "low",
+        "reason": "Important changed behavior lacks meaningful regression coverage."
+      }
+    ]
+  },
+  "final": {
+    "metrics": {
+      "correctness": {
+        "applicable": true,
+        "score": 7.1,
+        "confidence": 0.23,
+        "summary": "Correctness and requirement fit is strong based on the supplied change context.",
+        "issues": [
+          {
+            "severity": "low",
+            "description": "An important edge case or invalid state appears insufficiently handled.",
+            "suggestion": "Address the concrete requirement, edge-case, invariant, or regression risk before polishing structure."
+          }
+        ]
+      },
+      "cognitiveComplexity": {
+        "applicable": true,
+        "score": 7.3,
+        "confidence": 0.48,
+        "summary": "Cognitive complexity is strong based on the supplied change context.",
+        "issues": [
+          {
+            "severity": "low",
+            "description": "Special cases add disproportionate mental overhead.",
+            "suggestion": "Simplify the hardest control or data flow while preserving a cohesive implementation."
+          }
+        ]
+      },
+      "readability": {
+        "applicable": true,
+        "score": 7.7,
+        "confidence": 0.47,
+        "summary": "Readability and intent is strong based on the supplied change context.",
+        "issues": [
+          {
+            "severity": "low",
+            "description": "Comments are missing where rationale matters or add noise without rationale.",
+            "suggestion": "Make intent explicit through clearer naming, flow, or responsibility boundaries."
+          }
+        ]
+      },
+      "modularity": {
+        "applicable": true,
+        "score": 7.8,
+        "confidence": 0.65,
+        "summary": "Modularity and cohesion is strong based on the supplied change context.",
+        "issues": [
+          {
+            "severity": "low",
+            "description": "One module owns too many independently changing concerns.",
+            "suggestion": "Regroup responsibilities around cohesive domain behavior without creating gratuitous layers."
+          }
+        ]
+      },
+      "coupling": {
+        "applicable": true,
+        "score": 7.2,
+        "confidence": 0.61,
+        "summary": "Coupling and dependency quality is strong based on the supplied change context.",
+        "issues": [
+          {
+            "severity": "low",
+            "description": "A global or implicit dependency makes behavior harder to predict.",
+            "suggestion": "Remove or invert the dependency that most strongly leaks details or makes change unsafe."
+          }
+        ]
+      },
+      "changeability": {
+        "applicable": true,
+        "score": 7.1,
+        "confidence": 0.54,
+        "summary": "Changeability and change amplification is strong based on the supplied change context.",
+        "issues": [
+          {
+            "severity": "low",
+            "description": "A brittle dependency chain amplifies otherwise local changes.",
+            "suggestion": "Centralize the relevant knowledge or boundary so the next conceptual change has a small, predictable edit surface."
+          }
+        ]
+      },
+      "abstractionQuality": {
+        "applicable": true,
+        "score": 7.6,
+        "confidence": 0.6,
+        "summary": "Abstraction and API design is strong based on the supplied change context.",
+        "issues": [
+          {
+            "severity": "low",
+            "description": "The API exposes details callers should not need to know.",
+            "suggestion": "Deepen, remove, or reshape the abstraction that currently adds more surface than value."
+          }
+        ]
+      },
+      "projectStructure": {
+        "applicable": true,
+        "score": 7.7,
+        "confidence": 0.49,
+        "summary": "Project and file structure is strong based on the supplied change context."
+      },
+      "duplication": {
+        "applicable": true,
+        "score": 7.6,
+        "confidence": 0.41,
+        "summary": "Duplication and reuse is strong based on the supplied change context."
+      },
+      "maintainability": {
+        "applicable": true,
+        "score": 7.4,
+        "confidence": 0.57,
+        "summary": "Maintainability is strong based on the supplied change context.",
+        "issues": [
+          {
+            "severity": "low",
+            "description": "Routine modification is likely to be slow or error-prone.",
+            "suggestion": "Reduce the highest recurring cost of understanding, changing, debugging, or testing this code."
+          }
+        ]
+      },
+      "testQuality": {
+        "applicable": true,
+        "score": 7.9,
+        "confidence": 0.53,
+        "summary": "Testability and test quality is strong based on the supplied change context."
+      },
+      "reliability": {
+        "applicable": true,
+        "score": 7.5,
+        "confidence": 0.58,
+        "summary": "Reliability and error handling is strong based on the supplied change context."
+      },
+      "security": {
+        "applicable": true,
+        "score": 7,
+        "confidence": 0.54,
+        "summary": "Security is acceptable but improvable based on the supplied change context."
+      },
+      "consistency": {
+        "applicable": true,
+        "score": 7.4,
+        "confidence": 0.36,
+        "summary": "Consistency and conventions is strong based on the supplied change context."
+      },
+      "documentation": {
+        "applicable": true,
+        "score": 8,
+        "confidence": 0.55,
+        "summary": "Documentation and explainability is strong based on the supplied change context."
+      },
+      "performance": {
+        "applicable": true,
+        "score": 7.6,
+        "confidence": 0.41,
+        "summary": "Performance and resource efficiency is strong based on the supplied change context.",
+        "issues": [
+          {
+            "severity": "low",
+            "description": "Meaningful computation or I/O is repeated unnecessarily.",
+            "suggestion": "Optimize only the evidenced hot path or waste, keeping the design proportionate."
+          }
+        ]
+      },
+      "scalability": {
+        "applicable": true,
+        "score": 7.3,
+        "confidence": 0.51,
+        "summary": "Scalability and flexibility is strong based on the supplied change context.",
+        "issues": [
+          {
+            "severity": "low",
+            "description": "An evidenced growth dimension reaches a clear implementation bottleneck.",
+            "suggestion": "Address the evidenced growth constraint with the simplest design that fits expected demand."
+          }
+        ]
+      },
+      "compatibility": {
+        "applicable": true,
+        "score": 7.4,
+        "confidence": 0.35,
+        "summary": "Compatibility and API stability is strong based on the supplied change context."
+      },
+      "observability": {
+        "applicable": true,
+        "score": 7.6,
+        "confidence": 0.61,
+        "summary": "Observability and operability is strong based on the supplied change context."
+      }
+    },
+    "priorities": [
+      {
+        "metric": "security",
+        "severity": "low",
+        "reason": "Security is acceptable but improvable based on the supplied change context."
+      },
+      {
+        "metric": "correctness",
+        "severity": "low",
+        "reason": "An important edge case or invalid state appears insufficiently handled."
+      },
+      {
+        "metric": "changeability",
+        "severity": "low",
+        "reason": "A brittle dependency chain amplifies otherwise local changes."
+      },
+      {
+        "metric": "coupling",
+        "severity": "low",
+        "reason": "A global or implicit dependency makes behavior harder to predict."
+      },
+      {
+        "metric": "cognitiveComplexity",
+        "severity": "low",
+        "reason": "Special cases add disproportionate mental overhead."
+      }
+    ],
+    "improvements": [
+      "Correctness and requirement fit: 5.3 → 7.1",
+      "Cognitive complexity: 6 → 7.3",
+      "Readability and intent: 6.6 → 7.7",
+      "Modularity and cohesion: 6.3 → 7.8",
+      "Coupling and dependency quality: 6.4 → 7.2",
+      "Changeability and change amplification: 5.8 → 7.1",
+      "Abstraction and API design: 6.7 → 7.6",
+      "Project and file structure: 6.2 → 7.7",
+      "Duplication and reuse: 6.4 → 7.6",
+      "Maintainability: 5.7 → 7.4",
+      "Testability and test quality: 6 → 7.9",
+      "Reliability and error handling: 6 → 7.5",
+      "Consistency and conventions: 6 → 7.4",
+      "Documentation and explainability: 6.5 → 8",
+      "Performance and resource efficiency: 5.7 → 7.6"
+    ],
+    "regressions": [],
+    "comparison": [
+      {
+        "metric": "correctness",
+        "previousScore": 5.3,
+        "currentScore": 7.1,
+        "delta": 1.8,
+        "direction": "improved"
+      },
+      {
+        "metric": "cognitiveComplexity",
+        "previousScore": 6,
+        "currentScore": 7.3,
+        "delta": 1.3,
+        "direction": "improved"
+      },
+      {
+        "metric": "readability",
+        "previousScore": 6.6,
+        "currentScore": 7.7,
+        "delta": 1.1,
+        "direction": "improved"
+      },
+      {
+        "metric": "modularity",
+        "previousScore": 6.3,
+        "currentScore": 7.8,
+        "delta": 1.5,
+        "direction": "improved"
+      },
+      {
+        "metric": "coupling",
+        "previousScore": 6.4,
+        "currentScore": 7.2,
+        "delta": 0.8,
+        "direction": "improved"
+      },
+      {
+        "metric": "changeability",
+        "previousScore": 5.8,
+        "currentScore": 7.1,
+        "delta": 1.3,
+        "direction": "improved"
+      },
+      {
+        "metric": "abstractionQuality",
+        "previousScore": 6.7,
+        "currentScore": 7.6,
+        "delta": 0.9,
+        "direction": "improved"
+      },
+      {
+        "metric": "projectStructure",
+        "previousScore": 6.2,
+        "currentScore": 7.7,
+        "delta": 1.5,
+        "direction": "improved"
+      },
+      {
+        "metric": "duplication",
+        "previousScore": 6.4,
+        "currentScore": 7.6,
+        "delta": 1.2,
+        "direction": "improved"
+      },
+      {
+        "metric": "maintainability",
+        "previousScore": 5.7,
+        "currentScore": 7.4,
+        "delta": 1.7,
+        "direction": "improved"
+      },
+      {
+        "metric": "testQuality",
+        "previousScore": 6,
+        "currentScore": 7.9,
+        "delta": 1.9,
+        "direction": "improved"
+      },
+      {
+        "metric": "reliability",
+        "previousScore": 6,
+        "currentScore": 7.5,
+        "delta": 1.5,
+        "direction": "improved"
+      },
+      {
+        "metric": "security",
+        "previousScore": 7.1,
+        "currentScore": 7,
+        "delta": -0.1,
+        "direction": "unchanged"
+      },
+      {
+        "metric": "consistency",
+        "previousScore": 6,
+        "currentScore": 7.4,
+        "delta": 1.4,
+        "direction": "improved"
+      },
+      {
+        "metric": "documentation",
+        "previousScore": 6.5,
+        "currentScore": 8,
+        "delta": 1.5,
+        "direction": "improved"
+      },
+      {
+        "metric": "performance",
+        "previousScore": 5.7,
+        "currentScore": 7.6,
+        "delta": 1.9,
+        "direction": "improved"
+      }
+    ]
+  },
+  "disposition": "Generic low-confidence recommendations did not identify concrete locations. Concrete local audit findings were fixed and tested: serialization order, exception-branch coverage, semantic option permutation, unit-scale invariance, exact boundary wording, and hash-bound fail-closed curation. No speculative restructuring performed."
+}

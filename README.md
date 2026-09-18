@@ -366,3 +366,5 @@ are distinguished above; the probability patch addresses an observed difference.
 ## Weekend IT and business decision pilot
 
 The [September 18 research and training plan](research/weekend-20260918/PLAN.md) adds a source ledger, 2,304 original synthetic policy decisions, 24 separate challenge cases, executable label/quality checks and a bounded Jev audit. This is an experimental pilot with shared policy templates, not a production-quality decision benchmark. See the [quality report](research/weekend-20260918/QUALITY_REPORT.json) for observed checks and remaining validation. No GPU training is started by the data scripts.
+
+The [v3 frozen corpus](research/weekend-20260918/expanded-v3/README.md) expands this to 24 training families and 48 policy structures: 5,740 training records, 3,456 validation/calibration/test records and 480 challenge records from six reserved incident sources. It includes native and conversational prompt/completion formats, per-branch coverage, pinned-tokenizer checks and transparent Jev exclusions. V3 supersedes the v2 IT/business pilot for training; do not combine their folds.

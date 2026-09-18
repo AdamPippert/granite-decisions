@@ -1,0 +1,63 @@
+{
+  "version": "weekend-v3",
+  "counts": {
+    "train": 5740,
+    "validation": 1152,
+    "calibration": 1152,
+    "test": 1152,
+    "challenge": 480
+  },
+  "rows": 9676,
+  "groups": 2419,
+  "families": 24,
+  "training_policy_structures": 48,
+  "challenge_families": 6,
+  "challenge_policy_structures": 6,
+  "claims": {
+    "main_splits": "scenario and policy-instance disjoint; shared policy structures and inspiration events",
+    "challenge": "six distinct policy families and inspiration events absent from main splits; shared rendering engine"
+  },
+  "experimental_training_ready": true,
+  "independent_human_review": false,
+  "quarantined_rows": 20,
+  "quarantined_groups": [
+    "v3-business_priority-p1-002",
+    "v3-evidence_freshness-p0-037",
+    "v3-procurement-p0-037",
+    "v3-release-p0-043",
+    "v3-vendor-p0-000"
+  ],
+  "curation_scope": "96 preselected training records audited by Jev; all records checked deterministically. Whole flagged training groups quarantined. Evaluation never filtered by Jev.",
+  "sources_sha256": "ac09e2588ba01ff3e0cb864a86fd78b751eb41cce92a6fb150c44fd301e0b028",
+  "tokenizer_check_sha256": "4fcb26d3934b66442b6eda451d8372620323e382f513d2ba286cf6de0c6b0f20",
+  "judge_summary_sha256": "605400b2fd7d45473559b44af60a262709515b75ad279b43ef1e4a68cb016b3b",
+  "files": {
+    "train.jsonl": "989cbb10df54ecbd8d5dd18295705808c2ae5002bbef64294be51613e3d234aa",
+    "validation.jsonl": "2ca86b0a36b28498d6cd74689f73270a521a52ab357c96c015ae8f9f6ad68625",
+    "calibration.jsonl": "2dde5cada2e99dc889bb74247e8b96e463ef52694d40d391e452312a7eaeb21b",
+    "test.jsonl": "e2034addc82e41586cea852c64f60137f40f4b87c1831e4929e88e545aa9ba69",
+    "challenge.jsonl": "ea971ce8ac716b04596bf0c800a41b0d1ec3df879208aebf2aa14291b9a91158"
+  },
+  "quarantine_sha256": "b4c1c2efef73f14f116d928aa91b21e44060d1b2c53addfaf0e90597f35a1e39",
+  "generation_manifest_sha256": "80d9c598a38a4fe2f384d731156fce7fbfb9b046f979e4cc67dbda5d28b87e9a",
+  "training_contract": {
+    "input_fields": [
+      "state",
+      "question"
+    ],
+    "target_field": "label",
+    "metadata_never_prompted": [
+      "audit",
+      "source_ids",
+      "family",
+      "split",
+      "group",
+      "provenance"
+    ],
+    "suggested_sampling": "uniform family, then uniform scenario group, then uniform variant",
+    "suggested_loss": "categorical cross-entropy divided by log(number of options), averaged across families",
+    "max_prompt_tokens_checked": 4096,
+    "base_revision": "c0650403e44e78ec0262dab1c90914c65b196c4e",
+    "warning": "The historical overnight trainer hardcodes three old families. Do not pass this corpus to it unchanged; use a trainer that consumes all manifest families and normalizes accumulation correctly."
+  }
+}

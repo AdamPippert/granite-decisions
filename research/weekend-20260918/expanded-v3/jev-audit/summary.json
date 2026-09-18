@@ -1,0 +1,31 @@
+{
+  "data_sha256": "acb57e600d1555fbebf5a541f984cfe37f2b8038bf5128b3f31dcb9fc5ed8770",
+  "sources_sha256": "ac09e2588ba01ff3e0cb864a86fd78b751eb41cce92a6fb150c44fd301e0b028",
+  "requested": 96,
+  "passed": 91,
+  "quarantine_groups": [
+    "v3-business_priority-p1-002",
+    "v3-evidence_freshness-p0-037",
+    "v3-procurement-p0-037",
+    "v3-release-p0-043",
+    "v3-vendor-p0-000"
+  ],
+  "reasons": {
+    "quality_below_threshold": 1,
+    "judge_low_confidence": 3,
+    "judge_disagreement": 1
+  },
+  "mutation_count": 480,
+  "mutation_false_accepts": 0,
+  "semantic": {
+    "requested": 80,
+    "valid": 80,
+    "false_accepts": 0,
+    "false_rejects": 4,
+    "positive_controls": 40,
+    "negative_controls": 40,
+    "scope": "author-constructed integration probes; no independent human adjudication; not a real-world error rate"
+  },
+  "model": "jev-latest alias; actual response model stored per record",
+  "training_targets_changed": false
+}

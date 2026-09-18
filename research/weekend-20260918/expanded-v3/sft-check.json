@@ -1,0 +1,36 @@
+{
+  "gpu_used": false,
+  "splits": {
+    "train": {
+      "n": 5740,
+      "max_full_sequence_tokens": 449,
+      "prefix_checks_passed": 5740,
+      "sha256": "6f7ced0bd2829d364d237c95be7a2b145ae7929c9f1b73140ac3d80c2e1b1f0a"
+    },
+    "validation": {
+      "n": 1152,
+      "max_full_sequence_tokens": 449,
+      "prefix_checks_passed": 1152,
+      "sha256": "0b5e7b842887c751662a4bc3b57b93332252a73879ec4cf6eb2a9fbd14ed2f54"
+    },
+    "calibration": {
+      "n": 1152,
+      "max_full_sequence_tokens": 446,
+      "prefix_checks_passed": 1152,
+      "sha256": "73d982d2a2ad6b35f35ee454d716f5644c5a2300800a2601f6a9b57919b01fd1"
+    },
+    "test": {
+      "n": 1152,
+      "max_full_sequence_tokens": 449,
+      "prefix_checks_passed": 1152,
+      "sha256": "ccb52fb2b06a797a05217b4424be3c4e3c643118d835c8539d734ae819bea01e"
+    },
+    "challenge": {
+      "n": 480,
+      "max_full_sequence_tokens": 381,
+      "prefix_checks_passed": 480,
+      "sha256": "c5f4197d2e216a7625557c09bc426e0c081ae36001b1adbe31149b4bd8e3b678"
+    }
+  },
+  "candidate_codes_single_tokens": true
+}

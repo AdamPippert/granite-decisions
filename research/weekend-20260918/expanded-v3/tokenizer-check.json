@@ -1,0 +1,48 @@
+{
+  "model": "ibm-granite/granite-4.1-3b",
+  "revision": "c0650403e44e78ec0262dab1c90914c65b196c4e",
+  "prompt_version": "state-first-numeric-decisions-v2",
+  "gpu_used": false,
+  "splits": {
+    "train": {
+      "n": 5760,
+      "max": 446,
+      "median": 354,
+      "p95": 404,
+      "over_4096": 0,
+      "sha256": "acb57e600d1555fbebf5a541f984cfe37f2b8038bf5128b3f31dcb9fc5ed8770"
+    },
+    "validation": {
+      "n": 1152,
+      "max": 446,
+      "median": 354,
+      "p95": 403,
+      "over_4096": 0,
+      "sha256": "2ca86b0a36b28498d6cd74689f73270a521a52ab357c96c015ae8f9f6ad68625"
+    },
+    "calibration": {
+      "n": 1152,
+      "max": 443,
+      "median": 355,
+      "p95": 405,
+      "over_4096": 0,
+      "sha256": "2dde5cada2e99dc889bb74247e8b96e463ef52694d40d391e452312a7eaeb21b"
+    },
+    "test": {
+      "n": 1152,
+      "max": 446,
+      "median": 355,
+      "p95": 405,
+      "over_4096": 0,
+      "sha256": "e2034addc82e41586cea852c64f60137f40f4b87c1831e4929e88e545aa9ba69"
+    },
+    "challenge": {
+      "n": 480,
+      "max": 378,
+      "median": 334,
+      "p95": 366,
+      "over_4096": 0,
+      "sha256": "ea971ce8ac716b04596bf0c800a41b0d1ec3df879208aebf2aa14291b9a91158"
+    }
+  }
+}

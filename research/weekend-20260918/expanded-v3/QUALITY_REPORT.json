@@ -1,0 +1,109 @@
+{
+  "status": "frozen for experimental training; independent human adjudication and Granite evaluation not performed",
+  "deadline_local": "2026-09-18T08:00:00-07:00",
+  "accepted_counts": {
+    "train": 5740,
+    "validation": 1152,
+    "calibration": 1152,
+    "test": 1152,
+    "challenge": 480
+  },
+  "accepted_rows": 9676,
+  "accepted_groups": 2419,
+  "training_families": 24,
+  "training_policy_structures": 48,
+  "challenge_families": 6,
+  "source_ledger_entries": 33,
+  "eligible_source_entries": 26,
+  "quarantined_rows": 20,
+  "quarantined_groups": 5,
+  "labels_replaced_by_jev": 0,
+  "jev_audit": {
+    "data_sha256": "acb57e600d1555fbebf5a541f984cfe37f2b8038bf5128b3f31dcb9fc5ed8770",
+    "sources_sha256": "ac09e2588ba01ff3e0cb864a86fd78b751eb41cce92a6fb150c44fd301e0b028",
+    "requested": 96,
+    "passed": 91,
+    "quarantine_groups": [
+      "v3-business_priority-p1-002",
+      "v3-evidence_freshness-p0-037",
+      "v3-procurement-p0-037",
+      "v3-release-p0-043",
+      "v3-vendor-p0-000"
+    ],
+    "reasons": {
+      "quality_below_threshold": 1,
+      "judge_low_confidence": 3,
+      "judge_disagreement": 1
+    },
+    "mutation_count": 480,
+    "mutation_false_accepts": 0,
+    "semantic": {
+      "requested": 80,
+      "valid": 80,
+      "false_accepts": 0,
+      "false_rejects": 4,
+      "positive_controls": 40,
+      "negative_controls": 40,
+      "scope": "author-constructed integration probes; no independent human adjudication; not a real-world error rate"
+    },
+    "model": "jev-latest alias; actual response model stored per record",
+    "training_targets_changed": false
+  },
+  "gpu_used": false,
+  "human_reviewed": false,
+  "training_launched": false,
+  "training_scheduled": false,
+  "checks": {
+    "deterministic_schema_provenance_labels": true,
+    "serialized_roundtrip": true,
+    "every_label_every_split": true,
+    "every_branch_every_split": true,
+    "group_and_policy_instance_disjoint": true,
+    "challenge_sources_and_policy_structures_reserved": true,
+    "no_silent_context_truncation": true
+  },
+  "remaining_runtime_work": "Configure all-family native sampler or standard completion-only SFT; preserve replay and run GPU smoke at evening launch. Old overnight trainer is not directly compatible.",
+  "refinement_history": [
+    {
+      "finding": "Canonical JSON sorted audit fact keys, changing reconstruction of rendered evidence.",
+      "fix": "Render sorted fact keys and validate reloaded rows."
+    },
+    {
+      "finding": "Several exception branches absent despite complete class coverage.",
+      "fix": "Stratify roots by rule trace and gate branch coverage per policy and split."
+    },
+    {
+      "finding": "Jev rejects some unambiguous conflict-resolution tasks at a conservative threshold.",
+      "disposition": "Retain fixed thresholds; document false rejections and quarantine flagged training groups without relabeling."
+    },
+    {
+      "finding": "Incident dates were initially used where article publication dates were unavailable.",
+      "fix": "Separate event date, publication date and last-update fields; repeat freeze with corrected source hash, reuse identical model-visible judgments."
+    },
+    {
+      "finding": "Original opaque option names preserved the same alphabetic answer-code ordering.",
+      "fix": "Rotate option meanings across opaque names and compare semantic labels across invariance pairs; verify hundreds of paired target-code changes."
+    },
+    {
+      "finding": "Business numeric evidence was limited to toy cost magnitudes.",
+      "fix": "Scale every USD amount within a case by a common factor of 1, 10, 100 or 1000; test policy-label invariance."
+    },
+    {
+      "finding": "Twofold cost-margin heading did not explicitly distinguish equality from a strict comparison.",
+      "fix": "Clarify strictly MORE than twice, preserve executable target and add equality/just-above boundary tests. Only two changed Jev inputs were rejudged; 94 exact hash-matched judgments reused."
+    }
+  ],
+  "cpu_tests": {
+    "run": 85,
+    "passed": 82,
+    "skipped": 3,
+    "failed": 0,
+    "skips": "Optional Fullcollar unavailable; excluded by user"
+  },
+  "literal_gold_policy_cases": 56,
+  "sft_prefix_and_target_checks": 9676,
+  "max_prompt_tokens": 446,
+  "max_sft_tokens": 449,
+  "jev_top_label_agreement": 95,
+  "byte_reproduction": "All frozen native files and manifest reproduced exactly from generator and published judgments."
+}
