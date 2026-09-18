@@ -362,3 +362,7 @@ Red Hat, or TypeSafe is implied.
 
 Sources checked September 17, 2026. Published API behavior and observed behavior
 are distinguished above; the probability patch addresses an observed difference.
+
+## Weekend IT and business decision pilot
+
+The [September 18 research and training plan](research/weekend-20260918/PLAN.md) adds a source ledger, 2,304 original synthetic policy decisions, 24 separate challenge cases, executable label/quality checks and a bounded Jev audit. This is an experimental pilot with shared policy templates, not a production-quality decision benchmark. See the [quality report](research/weekend-20260918/QUALITY_REPORT.json) for observed checks and remaining validation. No GPU training is started by the data scripts.

@@ -1,0 +1,60 @@
+{
+  "status": "research plan and experimental pilot complete; expanded training corpus not yet approved",
+  "source_ledger_entries": 27,
+  "access_counts": {
+    "full_text": 15,
+    "landing_page": 3,
+    "section_read": 2,
+    "search_preview": 3,
+    "blocked_403": 2,
+    "empty_response": 1,
+    "blocked": 1
+  },
+  "eligible_inspiration_entries": 20,
+  "pilot_rows": 2304,
+  "pilot_groups": 576,
+  "handwritten_challenges": 24,
+  "cpu_tests": {
+    "run": 67,
+    "failed": 0,
+    "skipped": 3,
+    "skips": "Optional Fullcollar package unavailable; excluded by user"
+  },
+  "reproduction": "Split files and manifest reproduced byte-for-byte",
+  "jev_pilot": {
+    "selected": 24,
+    "source_sha256": "bc6196f24797c5df6306cbfbb98ba36d442373c27853ed3b2fdc9eaf4c3ced67",
+    "input_file_sha256": "0145f6b07c4c96ee7a876d1c5e4c631a6e4f845b1d3f006ea55fcbba1588b3c0",
+    "control_count": 120,
+    "control_false_accepts": 0,
+    "control_scope": "deterministic mutation controls only; not an independent measure of Jev quality",
+    "training_approved": false,
+    "live": true,
+    "thresholds": {
+      "label_confidence": 0.55,
+      "quality": 0.8
+    },
+    "passed": 24,
+    "quarantined": 0,
+    "rejection_counts": {}
+  },
+  "history": [
+    {
+      "version": "initial unbalanced pilot",
+      "jev_passed": 24,
+      "jev_requested": 24,
+      "finding": "Positive Noul classes and one Score class absent in some held-out splits; do not use",
+      "resolution": "Stratified labels per family/split, added missing-label rejection and regression test; regenerated v2 and repeated live judge"
+    }
+  ],
+  "review_disposition": "Two Jev Review calls completed. Generic low-confidence findings provided no actionable locations. Concrete local audit fixes: valid Noul contract, label coverage, typed response envelopes, reversible HF export. Retained cohesive small scripts rather than speculative restructuring.",
+  "not_measured": [
+    "Granite accuracy on new pilot/challenge",
+    "real-world decision quality",
+    "semantic Jev false-accept rate",
+    "independent human agreement",
+    "weekend throughput on longer inputs"
+  ],
+  "gpu_training_started": false,
+  "training_schedule_installed": false
+}

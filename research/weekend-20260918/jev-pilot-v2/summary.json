@@ -1,0 +1,17 @@
+{
+  "selected": 24,
+  "source_sha256": "bc6196f24797c5df6306cbfbb98ba36d442373c27853ed3b2fdc9eaf4c3ced67",
+  "input_file_sha256": "0145f6b07c4c96ee7a876d1c5e4c631a6e4f845b1d3f006ea55fcbba1588b3c0",
+  "control_count": 120,
+  "control_false_accepts": 0,
+  "control_scope": "deterministic mutation controls only; not an independent measure of Jev quality",
+  "training_approved": false,
+  "live": true,
+  "thresholds": {
+    "label_confidence": 0.55,
+    "quality": 0.8
+  },
+  "passed": 24,
+  "quarantined": 0,
+  "rejection_counts": {}
+}
