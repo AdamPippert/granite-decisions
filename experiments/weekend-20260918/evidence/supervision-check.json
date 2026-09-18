@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "container_process_group_deadline": {
+    "phase": "stopped",
+    "reason": "deadline",
+    "exit_code": -9,
+    "completed_utc": "2026-09-18T14:44:10.876533+00:00"
+  },
+  "elapsed_seconds": 2.0036277770996094
+}

@@ -1,0 +1,9 @@
+[Unit]
+Description=Start Granite training Friday at 20:00 Pacific
+[Timer]
+OnCalendar=2026-09-18 20:00:00 America/Los_Angeles
+AccuracySec=1s
+Persistent=true
+Unit=granite-weekend-v3-start.service
+[Install]
+WantedBy=timers.target

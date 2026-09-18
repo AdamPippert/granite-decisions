@@ -1,0 +1,7 @@
+Id=granite-weekend-v3-start.timer
+ActiveState=active
+NextElapseUSecRealtime=Fri 2026-09-18 20:00:00 PDT
+
+Id=granite-weekend-v3-stop.timer
+ActiveState=active
+NextElapseUSecRealtime=Sun 2026-09-20 16:59:45 PDT

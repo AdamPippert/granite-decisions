@@ -1,0 +1,6 @@
+[Unit]
+Description=Independent cancellation of weekend training before Sunday 17:00 Pacific
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/bash /home/adam/.local/share/granite-decisions/weekend-20260918/dispatch.sh stop
+TimeoutStartSec=60

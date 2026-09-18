@@ -1,0 +1,6 @@
+[Unit]
+Description=Launch personal Granite decisions weekend v3 training on hyde
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/bash /home/adam/.local/share/granite-decisions/weekend-20260918/dispatch.sh start
+TimeoutStartSec=180

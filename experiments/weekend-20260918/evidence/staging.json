@@ -1,0 +1,47 @@
+{
+  "status": "staged_and_scheduled",
+  "timezone": "America/Los_Angeles",
+  "start": "2026-09-18T20:00:00-07:00",
+  "training_cutoff": "2026-09-20T15:30:00-07:00",
+  "evaluation_cutoff": "2026-09-20T16:55:00-07:00",
+  "hard_stop": "2026-09-20T17:00:00-07:00",
+  "cpu_tests": {
+    "run": 97,
+    "passed": 94,
+    "skipped_optional_fullcollar": 3,
+    "failed": 0
+  },
+  "gpu_pilot": "passed; two updates with all24families and postselection calibration/test/challenge",
+  "fresh_process_adapter_reload": "passed; three probes exact logits",
+  "single_record_repeatability": "24/24 exactly equal",
+  "initial_batch_check": {
+    "status": "failed",
+    "max_probability_difference": 0.1814234612265304,
+    "resolution": "single-record scoring throughout; tolerance not relaxed"
+  },
+  "training_started": false,
+  "timers_host": "superrouter",
+  "superrouter_linger": "already enabled; no account settings changed",
+  "source_files_verified": [
+    "experiments/overnight-20260917/src/granite_decisions/__init__.py",
+    "experiments/overnight-20260917/src/granite_decisions/__main__.py",
+    "experiments/overnight-20260917/src/granite_decisions/cli.py",
+    "experiments/overnight-20260917/src/granite_decisions/contracts.py",
+    "experiments/overnight-20260917/src/granite_decisions/fullcollar.py",
+    "experiments/overnight-20260917/src/granite_decisions/general.py",
+    "experiments/overnight-20260917/src/granite_decisions/journal.py",
+    "experiments/overnight-20260917/src/granite_decisions/llamacpp.py",
+    "experiments/overnight-20260917/src/granite_decisions/prompting.py",
+    "experiments/overnight-20260917/src/granite_decisions/runtime.py",
+    "experiments/overnight-20260917/src/granite_decisions/service.py",
+    "experiments/overnight-20260917/src/granite_decisions/statistics.py",
+    "experiments/overnight-20260917/src/granite_decisions/training.py",
+    "experiments/weekend-20260918/scripts/supervise.py",
+    "experiments/weekend-20260918/scripts/train_weekend.py",
+    "experiments/weekend-20260918/scripts/weekend_data.py",
+    "experiments/weekend-20260918/scripts/dispatch.sh",
+    "experiments/weekend-20260918/scripts/launch-supervisor.sh"
+  ],
+  "runtime_inventory_sha256": "d9fa9696399fbf2580ff3578763a7814817c2b8156edf74b88e87157cae43844",
+  "automatic_weight_publication": false
+}
