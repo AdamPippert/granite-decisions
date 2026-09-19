@@ -54,20 +54,45 @@ def check(root):
     return config,manifest
 
 
-def run_child(command,deadline,log_path,status_path,cancel_path,env=None,grace=5):
+def resume_verified(path,pause_at,expected_reset,now):
+    try:
+        evidence=json.loads(Path(path).read_text())
+        return (evidence.get('reset_verified') is True
+            and evidence.get('source')=='account/rateLimits/read'
+            and pause_at<=evidence['checked_at']<=now
+            and now-evidence['checked_at']<=300
+            and evidence['previous_reset']==expected_reset<=now
+            and evidence['current_reset']>now
+            and 0<=evidence['used_percent']<100)
+    except (OSError,ValueError,KeyError,TypeError):return False
+
+
+def run_child(command,deadline,log_path,status_path,cancel_path,env=None,grace=5,pause_at=None,resume_path=None,expected_reset=None):
     """Kill the whole child session even if it ignores TERM; preserve exit evidence."""
     if time.time()>=deadline:raise ValueError('hard deadline already passed')
     with Path(log_path).open('ab',buffering=0) as log:
         child=subprocess.Popen(command,stdout=log,stderr=subprocess.STDOUT,env=env,start_new_session=True)
         write_json(status_path,{'phase':'running','pid':child.pid,'hard_stop_epoch':deadline})
-        reason='exited'
+        reason='exited';paused=False;pause_done=False
         try:
             while child.poll() is None:
                 if STOP or Path(cancel_path).exists():reason='cancelled';break
                 if time.time()>=deadline-grace:reason='deadline';break
-                time.sleep(min(.5,max(.01,deadline-grace-time.time())))
+                now=time.time()
+                if pause_at is not None and now>=pause_at and not pause_done:
+                    os.killpg(child.pid,signal.SIGSTOP);paused=True;pause_done=True
+                    write_json(status_path,{'phase':'paused','pid':child.pid,'paused_at':now,
+                        'reason':'awaiting_verified_subscription_reset','hard_stop_epoch':deadline})
+                if paused and resume_path and resume_verified(resume_path,pause_at,expected_reset,now):
+                    os.killpg(child.pid,signal.SIGCONT);paused=False
+                    write_json(status_path,{'phase':'running','pid':child.pid,'resumed_at':now,
+                        'reset_evidence':json.loads(Path(resume_path).read_text()),'hard_stop_epoch':deadline})
+                time.sleep(min(.2,max(.01,deadline-grace-time.time())))
         finally:
             if child.poll() is None:
+                if paused:
+                    try:os.killpg(child.pid,signal.SIGCONT)
+                    except ProcessLookupError:pass
                 try:os.killpg(child.pid,signal.SIGTERM)
                 except ProcessLookupError:pass
                 try:child.wait(timeout=max(.01,min(grace,deadline-time.time())))
@@ -107,7 +132,9 @@ def main():
     env=os.environ.copy();env['HF_HUB_OFFLINE']='1';env['TOKENIZERS_PARALLELISM']='false'
     write_json(root/'launch.json',{'command':command,'config':config,'data_hashes':manifest['files'],
         'started_utc':datetime.now(timezone.utc).isoformat()})
-    result=run_child(command,datetime.fromisoformat(config['hard_stop']).timestamp(),root/'training.log',root/'supervisor-status.json',root/'CANCEL',env)
+    result=run_child(command,datetime.fromisoformat(config['hard_stop']).timestamp(),root/'training.log',root/'supervisor-status.json',root/'CANCEL',env,
+        pause_at=datetime.fromisoformat(config['pause_at']).timestamp() if config.get('pause_at') else None,
+        resume_path=root/'resume-verified.json',expected_reset=config.get('expected_quota_reset'))
     # Keep a compact local handoff even when a deadline/error prevents final evaluation.
     report={'supervisor':result,'automatic_weight_publication':False}
     for name in ('best','selection-frozen','report','status'):

@@ -1,0 +1,8 @@
+[Unit]
+Description=Verify actual Codex weekly quota reset before resuming Granite training
+ConditionPathExists=!/home/adam/.local/share/granite-decisions/weekend-20260918/quota/resume-delivered.json
+[Service]
+Type=oneshot
+Environment=PATH=/home/adam/.local/bin:/usr/local/bin:/usr/bin:/bin
+ExecStart=/usr/bin/python3 /home/adam/.local/share/granite-decisions/weekend-20260918/quota_gate.py --baseline /home/adam/.local/share/granite-decisions/weekend-20260918/quota-baseline-sanitized.json --pause-at 1789830000 --until 1789943400 --out /home/adam/.local/share/granite-decisions/weekend-20260918/quota
+TimeoutStartSec=60

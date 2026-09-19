@@ -1,5 +1,5 @@
 {
-  "start": "2026-09-18T20:00:00-07:00",
+  "start": "2026-09-19T07:32:16-07:00",
   "train_until": "2026-09-20T15:30:00-07:00",
   "finish_until": "2026-09-20T16:55:00-07:00",
   "hard_stop": "2026-09-20T17:00:00-07:00",
@@ -8,5 +8,7 @@
   "eval_every": 75,
   "grid": "learning rates 1e-5/3e-5, seeds 17/29; early stop after 3 stale validations",
   "evaluation_batch_size": 1,
-  "runtime_user": "adam"
+  "runtime_user": "adam",
+  "pause_at": "2026-09-19T08:00:00-07:00",
+  "expected_quota_reset": 1789829783
 }

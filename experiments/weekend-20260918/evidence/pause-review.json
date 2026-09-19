@@ -1,0 +1,12 @@
+{
+  "jev_review": "unavailable",
+  "error": "Could not reach Jev API",
+  "tests": {
+    "run": 101,
+    "passed": 98,
+    "skipped_optional_fullcollar": 3
+  },
+  "live_quota_query": "passed via stdio app-server and actual systemd user-service environment",
+  "pause_resume": "process freeze and continuation verified by CPU test",
+  "future_pause_observed": false
+}

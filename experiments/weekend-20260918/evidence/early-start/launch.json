@@ -1,0 +1,41 @@
+{
+  "command": [
+    "/var/home/adam/Development/granite-decisions/.venv-finetune/bin/python",
+    "-u",
+    "/var/home/adam/Development/granite-decisions/experiments/weekend-20260918/runtime/experiments/weekend-20260918/scripts/train_weekend.py",
+    "--data",
+    "/var/home/adam/Development/granite-decisions/experiments/weekend-20260918/data-v3",
+    "--out",
+    "/var/home/adam/Development/granite-decisions/experiments/weekend-20260918/run",
+    "--steps",
+    "2500",
+    "--eval-every",
+    "75",
+    "--train-until",
+    "2026-09-20T15:30:00-07:00",
+    "--finish-until",
+    "2026-09-20T16:55:00-07:00"
+  ],
+  "config": {
+    "start": "2026-09-19T07:32:16-07:00",
+    "train_until": "2026-09-20T15:30:00-07:00",
+    "finish_until": "2026-09-20T16:55:00-07:00",
+    "hard_stop": "2026-09-20T17:00:00-07:00",
+    "maximum_start_delay_seconds": 900,
+    "steps": 2500,
+    "eval_every": 75,
+    "grid": "learning rates 1e-5/3e-5, seeds 17/29; early stop after 3 stale validations",
+    "evaluation_batch_size": 1,
+    "runtime_user": "adam",
+    "pause_at": "2026-09-19T08:00:00-07:00",
+    "expected_quota_reset": 1789829783
+  },
+  "data_hashes": {
+    "train.jsonl": "989cbb10df54ecbd8d5dd18295705808c2ae5002bbef64294be51613e3d234aa",
+    "validation.jsonl": "2ca86b0a36b28498d6cd74689f73270a521a52ab357c96c015ae8f9f6ad68625",
+    "calibration.jsonl": "2dde5cada2e99dc889bb74247e8b96e463ef52694d40d391e452312a7eaeb21b",
+    "test.jsonl": "e2034addc82e41586cea852c64f60137f40f4b87c1831e4929e88e545aa9ba69",
+    "challenge.jsonl": "ea971ce8ac716b04596bf0c800a41b0d1ec3df879208aebf2aa14291b9a91158"
+  },
+  "started_utc": "2026-09-19T14:32:50.599818+00:00"
+}

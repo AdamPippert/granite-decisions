@@ -8,13 +8,15 @@ All times are America/Los_Angeles (PDT), September 2026.
 
 | Event | Time |
 |---|---|
-| Start | Friday September 18, 20:00 |
+| Start | Saturday September 19, 07:32 (user-authorized early start) |
+| Pause in memory | Saturday September 19, 08:00 |
+| Verify reset and resume | First check 08:00:05; repeat each minute until verified |
 | Stop optimizer updates | Sunday September 20, 15:30 |
 | Finish evaluation | Sunday September 20, 16:55 |
 | External cancellation timer | Sunday September 20, 16:59:45 |
 | Absolute process-group hard stop | Sunday September 20, 17:00 |
 
-Superrouter's existing persistent user manager dispatches the job over SSH. The job runs detached as `adam` inside hyde's existing `granite-decisions-rocm` toolbox. Preflight rejects a different runtime user, ensuring the same model cache and GPU access as the pilot. It keeps running if SSH disconnects. Both machines must be powered on at launch; hyde must remain available throughout training. Start is allowed only within 15 minutes of the scheduled time. There is no automatic retry, resume, overwrite, or weight publication. A reboot or container shutdown interrupts the job; saved evaluated checkpoints remain available.
+The September 18 launch was held at the user's request. The user authorized starting early on September 19, then pausing at 08:00 until an actual subscription reset is verified. Superrouter dispatched the job over SSH; the old start timer remains disabled. The job runs detached as `adam` inside hyde's existing `granite-decisions-rocm` toolbox. Preflight rejects a different runtime user, ensuring the same model cache and GPU access as the pilot. It keeps running if SSH disconnects. Both machines must be powered on at launch; hyde must remain available throughout training. Start is allowed only within 15 minutes of the scheduled time. There is no automatic retry, resume, overwrite, or weight publication. A reboot or container shutdown interrupts the job; saved evaluated checkpoints remain available.
 
 The four fixed trials use learning rates 1e-5 and 3e-5 with seeds 17 and 29, up to 2,500 optimizer updates each. Each trial starts from the pinned untuned base and fresh LoRA parameters, not the previous overnight adapter. The pilot measured approximately 13.2 seconds per 24-example update; full-validation overhead and convergence determine how many trials fit. Three stale validation checks stop a trial early; the experiment may finish before Sunday if all trials converge. The schedule does not promise to consume every available GPU hour.
 
@@ -27,6 +29,12 @@ Checkpoints are evaluated every 75 updates and at each completed trial's last st
 Selection is written to `selection-frozen.json` before calibration, test or challenge inference. Temperatures are fitted only on calibration records. Baseline and selected checkpoints are evaluated on test and challenge records; challenge families receive no unrelated family calibration. The integration pilot exercises small samples of these paths after its own selection; it is not an effectiveness benchmark. The main run never uses pilot metrics for selection.
 
 The v3 dataset contains 5,740 training records, 1,152 records in each of validation/calibration/test, and 480 challenge records. No older dataset is concatenated into this run. Main splits share policy structures; challenge shares generation primitives. These are synthetic policy-following evaluations, not independent real-world evidence of Jev equivalence or retention of the older banking/BoolQ tasks.
+
+## Subscription pause
+
+At 08:00 the supervisor sends SIGSTOP to the trainer process group, preserving its optimizer and GPU memory state. It sends SIGCONT only after fresh reset evidence arrives. Cancellation and the absolute Sunday deadline remain active while paused. Local Granite training does not consume Codex subscription credits.
+
+The quota timer runs on superrouter using `account/rateLimits/read`, with no model inference and no reset-credit redemption. It requires the same account, a new weekly quota window, available usage and no reported limit. Errors, unchanged windows and missing evidence leave the trainer paused. Evidence must be checked after the pause, match the recorded old reset and be no more than five minutes old. The service stops querying once evidence is delivered. Private account snapshots stay outside the repository.
 
 ## Numerical validation
 

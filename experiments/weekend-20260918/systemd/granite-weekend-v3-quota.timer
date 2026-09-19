@@ -1,0 +1,9 @@
+[Unit]
+Description=Check quota after the Saturday 08:00 training pause
+[Timer]
+OnCalendar=2026-09-19 08..23:*:05 America/Los_Angeles
+OnCalendar=2026-09-20 00..15:*:05 America/Los_Angeles
+AccuracySec=1s
+Unit=granite-weekend-v3-quota.service
+[Install]
+WantedBy=timers.target
